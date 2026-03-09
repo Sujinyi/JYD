@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+"../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sources_1/new/counter.sv" \
+"../../../../digital_twin.srcs/sources_1/new/display_seg.sv" \
+"../../../../digital_twin.srcs/sources_1/new/dram_driver.sv" \
+"../../../../digital_twin.srcs/sources_1/new/perip_bridge.sv" \
+"../../../../digital_twin.srcs/sources_1/new/seg7.sv" \
+"../../../../digital_twin.srcs/sources_1/new/student_top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/twin_controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/uart.sv" \
+"../../../../digital_twin.srcs/sources_1/new/top.sv" \
+"../../../../../single/ACTL.sv" \
+"../../../../../single/MEM.sv" \
+"../../../../../single/ALU.sv" \
+"../../../../../single/MUX4_1.sv" \
+"../../../../../single/Control.sv" \
+"../../../../../single/MUX3_1.sv" \
+"../../../../../single/IMMGEN.sv" \
+"../../../../../single/Bridge.sv" \
+"../../../../../single/MiniRVCPU.sv" \
+"../../../../../single/PC.sv" \
+"../../../../../single/myCPU.sv" \
+"../../../../../single/myCPU1.sv" \
+"../../../../../single/adder.sv" \
+"../../../../../single/MUX2_1.sv" \
+"../../../../../single/NPC.sv" \
+"../../../../../single/RF.sv" \
+"../../../../digital_twin.srcs/sim_1/new/tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

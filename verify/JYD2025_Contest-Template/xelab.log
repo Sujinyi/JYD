@@ -1,0 +1,6 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe -prj digital_twin.sim\sim_1\behav\xsim\tb_myCPU_vlog.prj -L sim_1 tb_myCPU -s my_sim_snapshot 
+Multi-threading is on. Using 30 slave threads.
+ERROR: [XSIM 43-4316] Can not find file: digital_twin.sim\sim_1\behav\xsim/../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v
