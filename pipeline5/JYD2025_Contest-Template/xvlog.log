@@ -1,0 +1,42 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_student_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/myCPU.sv" into library work
+INFO: [VRFC 10-311] analyzing module myCPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/myCPU1.sv" into library work
+INFO: [VRFC 10-311] analyzing module myCPU1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/PC.sv" into library work
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/NPC.sv" into library work
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/IF_ID.sv" into library work
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/RF.sv" into library work
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/IMMGEN.sv" into library work
+INFO: [VRFC 10-311] analyzing module IMMGEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/Control.sv" into library work
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/ACTL.sv" into library work
+INFO: [VRFC 10-311] analyzing module ACTL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/ID_EX.sv" into library work
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/ALU.sv" into library work
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/Hazard_Detection.sv" into library work
+INFO: [VRFC 10-311] analyzing module Hazard_Detection
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/Forwarding.sv" into library work
+INFO: [VRFC 10-311] analyzing module Forwarding
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/EX_MEM.sv" into library work
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/MEM.sv" into library work
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/MEM_WB.sv" into library work
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/MUX2_1.sv" into library work
+INFO: [VRFC 10-311] analyzing module MUX2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/MUX3_1.sv" into library work
+INFO: [VRFC 10-311] analyzing module MUX3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/pipeline5/MUX4_1.sv" into library work
+INFO: [VRFC 10-311] analyzing module MUX4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "d:/26work/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv" into library work
+INFO: [VRFC 10-311] analyzing module perip_bridge

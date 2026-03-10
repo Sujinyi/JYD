@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/26work/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/26work/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/26work/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/26work/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM

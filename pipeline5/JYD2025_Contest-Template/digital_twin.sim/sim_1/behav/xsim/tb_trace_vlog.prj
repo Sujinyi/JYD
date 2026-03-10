@@ -1,0 +1,64 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+"../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sources_1/new/counter.sv" \
+"../../../../digital_twin.srcs/sources_1/new/display_seg.sv" \
+"../../../../digital_twin.srcs/sources_1/new/dram_driver.sv" \
+"../../../../digital_twin.srcs/sources_1/new/perip_bridge.sv" \
+"../../../../digital_twin.srcs/sources_1/new/seg7.sv" \
+"../../../../digital_twin.srcs/sources_1/new/student_top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/twin_controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/uart.sv" \
+"../../../../digital_twin.srcs/sources_1/new/top.sv" \
+"C:/Users/21186/Desktop/BTFN1/Mux4_1.sv" \
+"C:/Users/21186/Desktop/BTFN1/ALU.sv" \
+"C:/Users/21186/Desktop/BTFN1/CPU.sv" \
+"C:/Users/21186/Desktop/BTFN1/SegReg_IF1_IF2.sv" \
+"C:/Users/21186/Desktop/BTFN1/SegReg_EX_LS.sv" \
+"C:/Users/21186/Desktop/BTFN1/Write_Ctrl.sv" \
+"C:/Users/21186/Desktop/BTFN1/PC.sv" \
+"C:/Users/21186/Desktop/BTFN1/SegReg_ID_EX.sv" \
+"C:/Users/21186/Desktop/BTFN1/SegReg_LS_WB.sv" \
+"C:/Users/21186/Desktop/BTFN1/Hazard.sv" \
+"C:/Users/21186/Desktop/BTFN1/Bridge.sv" \
+"C:/Users/21186/Desktop/BTFN1/Regfile.sv" \
+"C:/Users/21186/Desktop/BTFN1/Read_Ctrl.sv" \
+"C:/Users/21186/Desktop/BTFN1/SegReg_IF2_ID.sv" \
+"C:/Users/21186/Desktop/BTFN1/NPC_Mux.sv" \
+"C:/Users/21186/Desktop/BTFN1/Mux2_1.sv" \
+"C:/Users/21186/Desktop/BTFN1/Decode.sv" \
+"C:/Users/21186/Desktop/BTFN1/Branch.sv" \
+"C:/Users/21186/Desktop/BTFN1/config.sv" \
+"../../../../pipeline5/ID_EX.sv" \
+"../../../../pipeline5/IF_ID.sv" \
+"../../../../pipeline5/ALU.sv" \
+"../../../../pipeline5/EX_MEM.sv" \
+"../../../../pipeline5/MEM.sv" \
+"../../../../pipeline5/ACTL.sv" \
+"../../../../pipeline5/IMMGEN.sv" \
+"../../../../pipeline5/Control.sv" \
+"../../../../pipeline5/Hazard_Detection.sv" \
+"../../../../pipeline5/PC.sv" \
+"../../../../pipeline5/myCPU.sv" \
+"../../../../pipeline5/MUX3_1.sv" \
+"../../../../pipeline5/RF.sv" \
+"../../../../pipeline5/Forwarding.sv" \
+"../../../../pipeline5/MUX2_1.sv" \
+"../../../../pipeline5/NPC.sv" \
+"../../../../pipeline5/adder.sv" \
+"../../../../pipeline5/MEM_WB.sv" \
+"../../../../pipeline5/myCPU1.sv" \
+"../../../../pipeline5/MUX4_1.sv" \
+"C:/Users/21186/Desktop/BTFN1/miniRV_SoC_tb.sv" \
+"../../../../../RISCV/single_SoC/single_SoC.srcs/sim_1/new/tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

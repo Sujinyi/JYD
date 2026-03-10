@@ -1,0 +1,25 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+d:/26work/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_student_top.sv,1772961024,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/myCPU.sv,,tb_student_top,,,,,,,,
+d:/26work/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv,1745642526,systemVerilog,,,,perip_bridge,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/ACTL.sv,1771895771,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/ID_EX.sv,,ACTL,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/ALU.sv,1770429188,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/Hazard_Detection.sv,,ALU,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/Control.sv,1772006480,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/ACTL.sv,,Control,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/EX_MEM.sv,1772009136,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/MEM.sv,,EX_MEM,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/Forwarding.sv,1772957741,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/EX_MEM.sv,,Forwarding,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/Hazard_Detection.sv,1772073580,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/Forwarding.sv,,Hazard_Detection,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/ID_EX.sv,1772006573,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/ALU.sv,,ID_EX,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/IF_ID.sv,1771914183,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/RF.sv,,IF_ID,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/IMMGEN.sv,1770429830,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/Control.sv,,IMMGEN,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/MEM.sv,1771986027,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/MEM_WB.sv,,MEM,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/MEM_WB.sv,1771991542,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/MUX2_1.sv,,MEM_WB,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/MUX2_1.sv,1770220715,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/MUX3_1.sv,,MUX2_1,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/MUX3_1.sv,1770386873,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/MUX4_1.sv,,MUX3_1,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/MUX4_1.sv,1770220728,systemVerilog,,d:/26work/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv,,MUX4_1,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/NPC.sv,1772022419,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/IF_ID.sv,,NPC,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/PC.sv,1772957686,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/NPC.sv,,PC,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/RF.sv,1771914322,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/IMMGEN.sv,,RF,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/myCPU.sv,1772960728,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/myCPU1.sv,,myCPU,,,,,,,,
+d:/26work/JYD2025_Contest-Template/pipeline5/myCPU1.sv,1772958049,systemVerilog,,d:/26work/JYD2025_Contest-Template/pipeline5/PC.sv,,myCPU1,,,,,,,,

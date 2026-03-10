@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Program exit detected (PC == 0x10). Finished successfully!
+$finish called at time : 37497500 ps : File "D:/26work/RISCV/single_SoC/single_SoC.srcs/sim_1/new/tb_trace.sv" Line 69
