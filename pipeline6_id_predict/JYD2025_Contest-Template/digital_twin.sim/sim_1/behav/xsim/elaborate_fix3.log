@@ -1,0 +1,59 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_8 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav_fix3 xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate_fix3.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'alu_op_id' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:167]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'alu_op_ex' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:181]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS_WB(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.myCPU
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="kin...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="kin...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.dram_driver
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav_fix3

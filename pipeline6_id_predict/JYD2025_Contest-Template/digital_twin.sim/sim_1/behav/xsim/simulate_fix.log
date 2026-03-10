@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Mar 10 22:37:39 2026
+# Process ID: 46952
+# Current directory: C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim
+# Command line: xsim.exe -log simulate_fix.log -mode tcl -source {xsim.dir/tb_trace_behav_fix/xsim_script.tcl}
+# Log file: C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate_fix.log
+# Journal file: C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim\xsim.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :13118 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_trace_behav_fix/xsim_script.tcl
+# xsim {tb_trace_behav_fix} -autoloadwcfg -tclbatch {tb_trace.tcl}
+Time resolution is 1 ps
+source tb_trace.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.dram_driver_inst.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim% Set-Location "c:\Users\21186\Desktop\verify\pipeline6_id_predict\JYD2025_Contest-Template\digital_twin.sim\sim_1\behav\xsim"; xsim tb_trace_behav_fix -runall -onfinish quit -log simulate_fix_runall.log
+invalid command name "Set-Location"
+xsim% exit
+INFO: [Common 17-206] Exiting xsim at Tue Mar 10 22:38:52 2026...
