@@ -81,7 +81,7 @@ module top(
 
     student_top student_top_inst(
         .w_cpu_clk(cpu_clk),
-        .w_clk_50Mhz(i_sys_clk_p), // 直接使用输入时钟，或使用pll生成的50MHz时钟
+        .w_clk_50Mhz(w_clk_50Mhz),
         .w_clk_rst(~w_clk_rst),
         .virtual_key(virtual_key),
         .virtual_sw(virtual_sw),

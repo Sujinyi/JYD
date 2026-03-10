@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Mar  9 19:42:27 2026
+| Date         : Tue Mar 10 08:38:04 2026
 | Host         : KuonjiAlice running 64-bit major release  (build 9200)
 | Command      : report_utilization -file IROM_utilization_synth.rpt -pb IROM_utilization_synth.pb
 | Design       : IROM
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 1319 |     0 |          0 |    203800 |  0.65 |
-|   LUT as Logic          | 1319 |     0 |          0 |    203800 |  0.65 |
+| Slice LUTs*             | 1318 |     0 |          0 |    203800 |  0.65 |
+|   LUT as Logic          | 1318 |     0 |          0 |    203800 |  0.65 |
 |   LUT as Memory         |    0 |     0 |          0 |     64000 |  0.00 |
 | Slice Registers         |    0 |     0 |          0 |    407600 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |          0 |    407600 |  0.00 |
 |   Register as Latch     |    0 |     0 |          0 |    407600 |  0.00 |
-| F7 Muxes                |  390 |     0 |          0 |    101900 |  0.38 |
-| F8 Muxes                |  157 |     0 |          0 |     50950 |  0.31 |
+| F7 Muxes                |  389 |     0 |          0 |    101900 |  0.38 |
+| F8 Muxes                |  156 |     0 |          0 |     50950 |  0.31 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -155,10 +155,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | LUT6     | 1267 |                 LUT |
-| MUXF7    |  390 |               MuxFx |
-| MUXF8    |  157 |               MuxFx |
+| MUXF7    |  389 |               MuxFx |
+| MUXF8    |  156 |               MuxFx |
 | LUT5     |   45 |                 LUT |
-| LUT4     |   31 |                 LUT |
+| LUT4     |   29 |                 LUT |
 | LUT3     |    9 |                 LUT |
 | LUT2     |    2 |                 LUT |
 +----------+------+---------------------+

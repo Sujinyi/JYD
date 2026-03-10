@@ -6,4 +6,41 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.MUX4_1
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.MUX2_1
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.IMMGEN
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ACTL
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MUX3_1
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.myCPU1
+Compiling module xil_defaultlib.myCPU
+Compiling module dist_mem_gen_v8_0_15.dist_mem_gen_v8_0_15(C_FAMILY="k...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module dist_mem_gen_v8_0_15.dist_mem_gen_v8_0_15(C_FAMILY="k...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.dram_driver
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav

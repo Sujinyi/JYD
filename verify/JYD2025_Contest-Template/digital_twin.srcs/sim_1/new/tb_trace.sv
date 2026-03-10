@@ -57,7 +57,7 @@ always_ff @(posedge clk) begin
 
     // 仿真时间限制与结束(备用超时机制)
     initial begin
-        #150000; // 仿真最大时长（或用 `wait` 等待某条件）
+        #500000000; // 仿真最大时长（或用 `wait` 等待某条件）
         $display("Simulation Timeout");
         $fclose(trace_ref);
         $finish;

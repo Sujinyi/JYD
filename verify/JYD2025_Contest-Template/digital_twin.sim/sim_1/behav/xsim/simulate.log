@@ -2,4 +2,5 @@ Time resolution is 1 ps
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 Hit termination condition: PC == 80000010
-$finish called at time : 27902500 ps : File "C:/Users/21186/Desktop/verify/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv" Line 54
+$finish called at time : 24829842500 ps : File "C:/Users/21186/Desktop/verify/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv" Line 54
+INFO: xsimkernel Simulation Memory Usage: 22168 KB (Peak: 22168 KB), Simulation CPU Usage: 228859 ms
