@@ -61,7 +61,8 @@ module perip_bridge(
     wire perip_wen = |perip_wstrb;
 
     // 写入DRAM时的地址范围判断（EX阶段，不打拍）
-    wire dram_addr_hit = (perip_addr >= DRAM_ADDR_START && perip_addr < DRAM_ADDR_END);
+    wire dram_addr_whit = perip_addr[31:18] == 14'h2004;
+    wire dram_addr_rhit = perip_addr_reg[31:18] == 14'h2004;
 
     // we don't care perip_mask in LED, SEG, SW & KEY, only care in DRAM
     // write process
@@ -113,7 +114,7 @@ module perip_bridge(
         .clk				(clk),
         .perip_addr			(perip_addr[17:0]),
         .perip_wdata		(perip_wdata),
-        .dram_wstrb			(perip_wstrb & {4{dram_addr_hit}}),  // 4-bit 字节写使能
+        .dram_wstrb			(perip_wstrb & {4{dram_addr_whit}}),  // 4-bit 字节写使能
         .perip_rdata		(dram_rdata)
     );
 
@@ -132,7 +133,7 @@ module perip_bridge(
                         {32{perip_addr_reg == SW1_ADDR}} & mmio_rdata |
                         {32{perip_addr_reg == KEY_ADDR}} & mmio_rdata |
                         {32{perip_addr_reg == SEG_ADDR}} & mmio_rdata |
-                        {32{perip_addr_reg >= DRAM_ADDR_START && perip_addr_reg < DRAM_ADDR_END}} & dram_rdata |
+                        {32{dram_addr_rhit}} & dram_rdata |
                         {32{perip_addr_reg == CNT_ADDR}} & cnt_rdata;
     
     assign virtual_led_output = LED;

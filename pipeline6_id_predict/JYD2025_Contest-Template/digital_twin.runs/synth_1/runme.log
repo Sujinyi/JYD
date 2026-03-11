@@ -1,0 +1,341 @@
+
+*** Running vivado
+    with args -log student_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source student_top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Mar 11 08:43:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source student_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top student_top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Device 21-9227] Part: xc7k325tffg900-2 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1509.711 ; gain = 447.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'student_top' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/student_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'myCPU' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/myCPU.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'NPC_Mux' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/NPC_Mux.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_Mux' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/NPC_Mux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/PC.sv:1]
+	Parameter RESET_VALUE bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/PC.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF1_IF2' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_IF1_IF2.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF1_IF2' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_IF1_IF2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF2_ID' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_IF2_ID.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF2_ID' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_IF2_ID.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Decode' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Decode.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Decode' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Decode.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Regfile' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Regfile.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Regfile' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Regfile.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_ID_EX' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_ID_EX.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_ID_EX' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_ID_EX.sv:1]
+WARNING: [Synth 8-689] width (4) of port connection 'alu_op_id' does not match port width (5) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:167]
+WARNING: [Synth 8-689] width (4) of port connection 'alu_op_ex' does not match port width (5) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:181]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_1' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Mux2_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_1' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Mux2_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_1' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Mux4_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_1' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Mux4_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/ALU.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/ALU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Branch.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Branch.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_EX_LS' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_EX_LS.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_EX_LS' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_EX_LS.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_Ctrl' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Write_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Write_Ctrl' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Write_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Read_Ctrl' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Read_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Read_Ctrl' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Read_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_LS_WB' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_LS_WB.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_LS_WB' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/SegReg_LS_WB.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Hazard' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/CPU.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'myCPU' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/src/BTFN_id_predict/myCPU.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/.Xil/Vivado-10280-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/.Xil/Vivado-10280-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'perip_bridge' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv:71]
+INFO: [Synth 8-6157] synthesizing module 'display_seg' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/seg7.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/seg7.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/seg7.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_seg' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dram_driver' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/dram_driver.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/.Xil/Vivado-10280-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/.Xil/Vivado-10280-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram_driver' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/dram_driver.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'perip_bridge' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/perip_bridge.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'student_top' (0#1) [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/student_top.sv:23]
+WARNING: [Synth 8-7129] Port perip_addr[1] in module dram_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port perip_addr[0] in module dram_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[4] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Write_Ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1631.539 ; gain = 569.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1631.539 ; gain = 569.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1631.539 ; gain = 569.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1631.539 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'Mem_IROM'
+Finished Parsing XDC File [c:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'Mem_IROM'
+Parsing XDC File [c:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'bridge_inst/dram_driver_inst/your_instance_name'
+Finished Parsing XDC File [c:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'bridge_inst/dram_driver_inst/your_instance_name'
+Parsing XDC File [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/constrs_1/new/sta.xdc]
+Finished Parsing XDC File [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.srcs/constrs_1/new/sta.xdc]
+Parsing XDC File [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1683.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1683.410 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Mem_IROM' at clock pin 'clka' is different from the actual clock period '9.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bridge_inst/dram_driver_inst/your_instance_name' at clock pin 'clka' is different from the actual clock period '9.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Mem_IROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bridge_inst/dram_driver_inst/your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 52    
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 18    
+	   4 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 40    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design student_top has port virtual_seg[37] driven by constant 0
+WARNING: [Synth 8-3917] design student_top has port virtual_seg[27] driven by constant 0
+WARNING: [Synth 8-3917] design student_top has port virtual_seg[17] driven by constant 0
+WARNING: [Synth 8-3917] design student_top has port virtual_seg[7] driven by constant 0
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[4] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Read_Ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1694.141 ; gain = 631.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.695 ; gain = 644.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |IROM          |         1|
+|2     |DRAM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |DRAM   |     1|
+|2     |IROM   |     1|
+|3     |BUFG   |     2|
+|4     |CARRY4 |   102|
+|5     |LUT1   |     8|
+|6     |LUT2   |   125|
+|7     |LUT3   |    62|
+|8     |LUT4   |   296|
+|9     |LUT5   |   412|
+|10    |LUT6   |  1062|
+|11    |MUXF7  |   256|
+|12    |MUXF8  |   128|
+|13    |FDCE   |     5|
+|14    |FDRE   |  1513|
+|15    |FDSE   |     4|
+|16    |IBUF   |    75|
+|17    |OBUF   |    72|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1720.484 ; gain = 595.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1720.484 ; gain = 658.312
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1723.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 486 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1727.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d41c00e8
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1727.148 ; gain = 1132.527
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1727.148 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/21186/Desktop/verify/pipeline6_id_predict/JYD2025_Contest-Template/digital_twin.runs/synth_1/student_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file student_top_utilization_synth.rpt -pb student_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 11 08:44:19 2026...

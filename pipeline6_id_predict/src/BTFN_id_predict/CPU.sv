@@ -227,6 +227,8 @@ module CPU#(
         .dout           (alu_rs2)
     );
 
+    wire [31:0] mem_addr_ex = alu_rf_data1 + imm_ex;
+
     ALU  ALU_inst (
         .sr1            (alu_rs1),
         .sr2            (alu_rs2),
@@ -271,13 +273,13 @@ module CPU#(
 
     Write_Ctrl  Write_Ctrl_inst (
         .mem_wdata      (alu_rf_data2),
-        .alu_result     (alu_result_ex[1:0]),
+        .alu_result     (mem_addr_ex[1:0]),
         .mem_access     (mem_access_ex),
         .wdata          (d_wdata),
         .d_wstrb        (d_wstrb)
     );
 
-    assign bus_addr = alu_result_ex;
+    assign bus_addr = mem_addr_ex;
     assign bus_wdata = d_wdata;
     assign bus_wen = d_wstrb;
 
@@ -303,6 +305,8 @@ module CPU#(
         .rdata          (mem_rdata_ls)
     );
 
+    wire [31:0] rf_wdata_ls = (wb_rf_sel_ls) ? mem_rdata_ls : alu_result_ls;
+
     /* LS-WB segreg */
     SegReg_LS_WB # (
         .PC_RESET_VAL(PC_RESET_VALUE)
@@ -322,19 +326,10 @@ module CPU#(
         .wb_rf_sel_wb       (wb_rf_sel_wb),
         .rf_we_wb           (rf_we_wb),
         .have_inst_ls       (have_inst_ls),
-        .have_inst_wb       (have_inst_wb)
+        .have_inst_wb       (have_inst_wb),
+        .rf_wdata_ls        (rf_wdata_ls),
+        .rf_wdata_wb        (rf_wdata_wb)
     );
-
-    /* WB stage */
-    Mux2_1 # (
-        .WIDTH(32)
-    )   WB_rf_wdata_mux (
-        .din1           (alu_result_wb),//0
-        .din2           (mem_rdata_wb),//1
-        .sel            (wb_rf_sel_wb),
-        .dout           (rf_wdata_wb)
-    );
-
 
     /* Hazard */
     Hazard  Hazard_inst (
