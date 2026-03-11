@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Mar 11 17:50:31 2026
+# Process ID: 34852
+# Current directory: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim
+# Command line: xsim.exe -log simulate_opt0311.log -mode tcl -source {xsim.dir/tb_trace_behav_opt0311/xsim_script.tcl}
+# Log file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate_opt0311.log
+# Journal file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim\xsim.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :14080 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_trace_behav_opt0311/xsim_script.tcl
+# xsim {tb_trace_behav_opt0311} -autoloadwcfg -runall -onfinish quit
+Time resolution is 1 ps
+run -all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.dram_driver_inst.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Hit termination condition: PC == 80000010
+$finish called at time : 38077500 ps : File "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv" Line 87
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Mar 11 17:50:33 2026...

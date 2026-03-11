@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Mar 11 16:49:36 2026
+# Process ID: 42468
+# Current directory: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim
+# Command line: xsim.exe -log simulate_fix0311.log -mode tcl -source {xsim.dir/tb_trace_behav_fix0311/xsim_script.tcl}
+# Log file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate_fix0311.log
+# Journal file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim\xsim.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :13155 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_trace_behav_fix0311/xsim_script.tcl
+source tb_trace.tcl
+Set-Location "c:\Users\21186\Desktop\verify\pipeline6_if2_predict\JYD2025_Contest-Template\digital_twin.sim\sim_1\behav\xsim"; xsim tb_trace_behav_fix0311 -runall -onfinish quit -log simulate_runall_fix0311.log; exit $LASTEXITCODE
+quit

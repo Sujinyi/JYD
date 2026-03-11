@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Mar 11 09:02:46 2026
+# Process ID: 28548
+# Current directory: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24588 C:\Users\21186\Desktop\verify\pipeline6_if2_predict\JYD2025_Contest-Template\digital_twin.xpr
+# Log file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/vivado.log
+# Journal file: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template\vivado.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :18952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.xpr
+report_ip_status -name ip_status 
+upgrade_ip -srcset DRAM [get_ips  {DRAM IROM pll}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {DRAM IROM pll}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+add_files -norecurse {C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/myCPU.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Decode.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF1_IF2.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_LS_WB.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_EX_LS.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF2_ID.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Hazard.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_ID_EX.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Bridge.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/CPU.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Regfile.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/PC.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Read_Ctrl.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Write_Ctrl.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/ALU.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Branch.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/config.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux2_1.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux4_1.sv C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/NPC_Mux.sv}
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci
+file delete -force C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM
+file delete -force c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/IROM
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci
+file delete -force C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM
+file delete -force c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.gen/sources_1/ip/DRAM
+report_ip_status -name ip_status 
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name IROM
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/21186/Desktop/verify/coe/irom.coe} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Output_Reset_Value_A {80000000} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Use_RSTA_Pin {true} \
+  CONFIG.Write_Depth_A {4096} \
+  CONFIG.Write_Width_A {32} \
+] [get_ips IROM]
+generate_target {instantiation_template} [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+generate_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+launch_runs IROM_synth_1 -jobs 16
+wait_on_run IROM_synth_1
+export_simulation -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name DRAM
+set_property -dict [list \
+  CONFIG.Byte_Size {8} \
+  CONFIG.Coe_File {C:/Users/21186/Desktop/verify/coe/dram.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Use_Byte_Write_Enable {true} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {32} \
+] [get_ips DRAM]
+generate_target {instantiation_template} [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+generate_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+launch_runs DRAM_synth_1 -jobs 16
+wait_on_run DRAM_synth_1
+export_simulation -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -directory C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/21186/Desktop/verify/coe/irom.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/21186/Desktop/verify/coe/irom.coe
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/irom.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/irom.coe
+file delete -force C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/irom.coe
+export_ip_user_files -of_objects  [get_files c:/Users/21186/Desktop/verify/coe/dram.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/21186/Desktop/verify/coe/dram.coe
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/dram.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/dram.coe
+file delete -force C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/imports/test_src/dram.coe
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv w ]
+add_files -fileset sim_1 C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/verify/coe/irom.coe} [get_ips IROM]
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/verify/coe/dram.coe} [get_ips DRAM]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_trace [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+export_ip_user_files -of_objects  [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset IROM] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+generate_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+export_simulation -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+export_ip_user_files -of_objects  [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset DRAM] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+generate_target all [get_files  c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci]
+export_simulation -of_objects [get_files c:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci] -directory C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -directory C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset pll
+set_property top pll [get_fileset pll]
+move_files -fileset [get_fileset pll] [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/verify/pipeline6_if2_predict/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+launch_run pll_synth_1
+wait_on_run pll_synth_1
+
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+restart
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu}} 
+run 10 us
+relaunch_sim
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu}} 
+relaunch_sim
+run 10 us
+close_sim
+set_property is_enabled false [get_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Bridge.sv]
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+current_wave_config {Untitled 2}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6}} 
+restart
+relaunch_sim
+run 10 us
+run all
+relaunch_sim
+run 10 us
+run all
+run 10 us
+close_sim
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu}} 
+run 10 us
+close_sim
+launch_simulation
+source tb_trace.tcl
+run 10 us
+current_wave_config {Untitled 4}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6}} 
+relaunch_sim
+run 10 us
+current_wave_config {Untitled 4}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/Hazard_inst}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/NPC_Mux_inst}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/Hazard_inst}} 
+relaunch_sim
+run 10 us
+current_wave_config {Untitled 4}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6}} 
+close_sim
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 5}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6}} 
+run all
+current_wave_config {Untitled 5}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/NPC_Mux_inst}} 
+relaunch_sim
+run 10 us
+close_sim
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/NPC_Mux_inst}} 
+current_wave_config {Untitled 6}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_if1}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_if2}} 
+current_wave_config {Untitled 6}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_if1}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_if2}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF1_IF2_stall}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF1_IF2_flush}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF2_ID_stall}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF2_ID_flush}} 
+current_wave_config {Untitled 6}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/debug_wb_pc}} {{/tb_trace/uut/student_top_inst/Core_cpu/debug_wb_rf_wen}} {{/tb_trace/uut/student_top_inst/Core_cpu/debug_wb_rf_wnum}} {{/tb_trace/uut/student_top_inst/Core_cpu/debug_wb_rf_wdata}} 
+relaunch_sim
+run 10 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+source tb_trace.tcl
+run all
+current_wave_config {Untitled 7}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_if2}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_id}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_ex}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_ls}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/pc_wb}} 
+current_wave_config {Untitled 7}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF1_IF2_stall}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF1_IF2_flush}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF2_ID_stall}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/IF2_ID_flush}} {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/ID_EX_flush}} 
+current_wave_config {Untitled 7}
+add_wave {{/tb_trace/uut/student_top_inst/Core_cpu/Core_cpu6/Hazard_inst}} 
+relaunch_sim
+run 10 us
+close_sim
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 8}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+close_sim

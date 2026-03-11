@@ -1,0 +1,47 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sources_1/new/counter.sv" \
+"../../../../digital_twin.srcs/sources_1/new/display_seg.sv" \
+"../../../../digital_twin.srcs/sources_1/new/dram_driver.sv" \
+"../../../../digital_twin.srcs/sources_1/new/perip_bridge.sv" \
+"../../../../digital_twin.srcs/sources_1/new/seg7.sv" \
+"../../../../digital_twin.srcs/sources_1/new/student_top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/twin_controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/uart.sv" \
+"../../../../digital_twin.srcs/sources_1/new/top.sv" \
+"../../../../../src/BTFN_if2_predict/myCPU.sv" \
+"../../../../../src/BTFN_if2_predict/Decode.sv" \
+"../../../../../src/BTFN_if2_predict/SegReg_IF1_IF2.sv" \
+"../../../../../src/BTFN_if2_predict/SegReg_LS_WB.sv" \
+"../../../../../src/BTFN_if2_predict/SegReg_EX_LS.sv" \
+"../../../../../src/BTFN_if2_predict/SegReg_IF2_ID.sv" \
+"../../../../../src/BTFN_if2_predict/Hazard.sv" \
+"../../../../../src/BTFN_if2_predict/SegReg_ID_EX.sv" \
+"../../../../../src/BTFN_if2_predict/CPU.sv" \
+"../../../../../src/BTFN_if2_predict/Regfile.sv" \
+"../../../../../src/BTFN_if2_predict/PC.sv" \
+"../../../../../src/BTFN_if2_predict/Read_Ctrl.sv" \
+"../../../../../src/BTFN_if2_predict/Write_Ctrl.sv" \
+"../../../../../src/BTFN_if2_predict/ALU.sv" \
+"../../../../../src/BTFN_if2_predict/Branch.sv" \
+"../../../../../src/BTFN_if2_predict/config.sv" \
+"../../../../../src/BTFN_if2_predict/Mux2_1.sv" \
+"../../../../../src/BTFN_if2_predict/Mux4_1.sv" \
+"../../../../../src/BTFN_if2_predict/NPC_Mux.sv" \
+
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sim_1/new/tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
