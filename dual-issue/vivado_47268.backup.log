@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Mar 17 11:58:19 2026
+# Process ID: 47268
+# Current directory: C:/Users/21186/Desktop/verify/dual-issue
+# Command line: vivado.exe -mode batch -source short_rerun_after_fix2.tcl
+# Log file: C:/Users/21186/Desktop/verify/dual-issue/vivado.log
+# Journal file: C:/Users/21186/Desktop/verify/dual-issue\vivado.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :16493 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source short_rerun_after_fix2.tcl
+# open_project C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate.log"
+    while executing
+"launch_simulation"
+    (file "short_rerun_after_fix2.tcl" line 2)
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 17 11:58:25 2026...

@@ -1,0 +1,56 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sources_1/new/counter.sv" \
+"../../../../digital_twin.srcs/sources_1/new/display_seg.sv" \
+"../../../../digital_twin.srcs/sources_1/new/dram_driver.sv" \
+"../../../../digital_twin.srcs/sources_1/new/perip_bridge.sv" \
+"../../../../digital_twin.srcs/sources_1/new/seg7.sv" \
+"../../../../digital_twin.srcs/sources_1/new/student_top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/twin_controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/uart.sv" \
+"../../../../digital_twin.srcs/sources_1/new/top.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Decode.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF1_IF2.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_LS_WB.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_EX_LS.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF2_ID.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Hazard.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_ID_EX.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Regfile.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/PC.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Read_Ctrl.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Write_Ctrl.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/ALU.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Branch.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Mux2_1.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/Mux4_1.sv" \
+"../../../../../../pipeline6_if2_predict/src/BTFN_if2_predict/NPC_Mux.sv" \
+
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../../src/Issue1.sv" \
+"../../../../../src/config.sv" \
+"../../../../../src/Inst_Buffer.sv" \
+"../../../../../src/CORE.sv" \
+"../../../../../src/LSU.sv" \
+"../../../../../src/RF.sv" \
+"../../../../../src/ALU.sv" \
+"../../../../../src/Decoder.sv" \
+"../../../../../src/Fronted.sv" \
+"../../../../../src/Decode.sv" \
+"../../../../../src/Eexcute.sv" \
+"../../../../../src/Fetch.sv" \
+"../../../../../tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

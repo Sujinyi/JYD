@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Mar 17 09:59:24 2026
+# Process ID: 37684
+# Current directory: C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17848 C:\Users\21186\Desktop\verify\dual-issue\JYD2025_Contest-Template\digital_twin.xpr
+# Log file: C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/vivado.log
+# Journal file: C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template\vivado.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :20751 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.xpr
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/FPGA/Genesys_riscv.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/21186/Desktop/verify/FPGA/Genesys_riscv.xdc
+set_property is_enabled false [get_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/myCPU.sv]
+set_property is_enabled false [get_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/CPU.sv]
+add_files -norecurse {C:/Users/21186/Desktop/verify/dual-issue/src/Issue1.sv C:/Users/21186/Desktop/verify/dual-issue/src/config.sv C:/Users/21186/Desktop/verify/dual-issue/src/Inst_Buffer.sv C:/Users/21186/Desktop/verify/dual-issue/src/CORE.sv C:/Users/21186/Desktop/verify/dual-issue/src/LSU.sv C:/Users/21186/Desktop/verify/dual-issue/src/RF.sv C:/Users/21186/Desktop/verify/dual-issue/src/ALU.sv C:/Users/21186/Desktop/verify/dual-issue/src/Decoder.sv C:/Users/21186/Desktop/verify/dual-issue/src/Fronted.sv C:/Users/21186/Desktop/verify/dual-issue/src/Decode.sv C:/Users/21186/Desktop/verify/dual-issue/src/Eexcute.sv C:/Users/21186/Desktop/verify/dual-issue/src/Fetch.sv}
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/config.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/config.sv
+add_files -fileset constrs_1 -norecurse C:/Users/21186/Desktop/verify/dual-issue/Genesys_riscv.xdc
+set_property CONFIG.Write_Width_A {64} [get_ips IROM]
+generate_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs IROM_synth_1 -jobs 16
+wait_on_run IROM_synth_1
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sim_1/new/tb_trace.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/21186/Desktop/verify/dual-issue/tb_trace.sv
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/verify/dual-issue/coe/irom2.coe} [get_ips IROM]
+generate_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs IROM_synth_1 -jobs 16
+wait_on_run IROM_synth_1
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset IROM] C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+generate_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci]
+launch_runs IROM_synth_1 -jobs 16
+wait_on_run IROM_synth_1
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.CLKOUT2_JITTER {136.686} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {9} \
+] [get_ips pll]
+generate_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+catch { config_ip_cache -export [get_ips -all pll] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -directory C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+catch { config_ip_cache -export [get_ips -all pll] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci]
+export_simulation -of_objects [get_files C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci] -directory C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+restart
+current_wave_config {Untitled 1}
+add_wave {{/tb_trace/uut/student_top_inst/RISCV_Core}} 
+run all
+close_sim
+launch_simulation
+source tb_trace.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_trace/uut/virtual_led}} {{/tb_trace/uut/virtual_seg}} 
+run all
+run 10 us
+close_sim
+launch_simulation
+source tb_trace.tcl
+close_sim
+launch_simulation
+launch_simulation

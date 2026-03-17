@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Mar 17 15:20:48 2026
+# Process ID: 29180
+# Current directory: C:/Users/21186/Desktop/verify/dual-issue
+# Command line: vivado.exe -mode batch -source C:\Users\21186\Desktop\verify\dual-issue\cleanup_old_project_refs.tcl
+# Log file: C:/Users/21186/Desktop/verify/dual-issue/vivado.log
+# Journal file: C:/Users/21186/Desktop/verify/dual-issue\vivado.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36289 MB
+# Available Virtual :14377 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source {C:\Users\21186\Desktop\verify\dual-issue\cleanup_old_project_refs.tcl}
+# set proj_path "C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.xpr"
+# set old_files [list \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/myCPU.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Decode.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF1_IF2.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_LS_WB.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_EX_LS.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF2_ID.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Hazard.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_ID_EX.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Bridge.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/CPU.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Regfile.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/PC.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Read_Ctrl.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Write_Ctrl.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/ALU.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Branch.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux2_1.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux4_1.sv" \
+#     "C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/NPC_Mux.sv" \
+# ]
+# open_project $proj_path
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+# foreach old_file $old_files {
+#     set matched [get_files -quiet $old_file]
+#     if {[llength $matched] > 0} {
+#         puts "Removing $old_file"
+#         remove_files -quiet $matched
+#     } else {
+#         puts "Already absent: $old_file"
+#     }
+# }
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/myCPU.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Decode.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF1_IF2.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_LS_WB.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_EX_LS.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_IF2_ID.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Hazard.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/SegReg_ID_EX.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Bridge.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/CPU.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Regfile.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/PC.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Read_Ctrl.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Write_Ctrl.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/ALU.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Branch.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux2_1.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/Mux4_1.sv
+Already absent: C:/Users/21186/Desktop/verify/pipeline6_if2_predict/src/BTFN_if2_predict/NPC_Mux.sv
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# launch_simulation -scripts_only
+Command: launch_simulation  -scripts_only
+INFO: [Vivado 12-12492] Generating simulation scripts for 'XSim' simulator.
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/tb_trace_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/xelab.pb
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5680] Creating behavioral simulation scripts in 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_trace' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/dram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/irom2.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-60] Script generated:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/compile.bat
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-60] Script generated:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/elaborate.bat
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-60] Script generated:C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.sim/sim_1/behav/xsim/simulate.bat
+# close_sim -quiet
+# launch_runs synth_1 -scripts_only
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/DRAM/DRAM.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/ip/pll_1/pll.xci' is already up-to-date
+ERROR: [Common 17-69] Command failed:  Run 'synth_1' needs to be reset before launching. The run can be reset using the Tcl command 'reset_run synth_1'.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 17 15:21:00 2026...

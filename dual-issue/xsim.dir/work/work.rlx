@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/21186/Desktop/verify/dual-issue/JYD2025_Contest-Template/digital_twin.srcs/sources_1/new/student_top.sv,1773728300,systemVerilog,,,,student_top,,,,,,,,
+C:/Users/21186/Desktop/verify/dual-issue/src/Decode.sv,1773728698,systemVerilog,,C:/Users/21186/Desktop/verify/dual-issue/src/Fetch.sv,,Decode,,,,,,,,
+,,,,,,,,,,,,,,
+C:/Users/21186/Desktop/verify/dual-issue/src/Inst_Buffer.sv,1773728598,systemVerilog,,C:/Users/21186/Desktop/verify/dual-issue/src/Decode.sv,,Inst_Buffer,,,,,,,,
+C:/Users/21186/Desktop/verify/dual-issue/src/Issue1.sv,1773718476,systemVerilog,,,,Issue,,,,,,,,
+C:/Users/21186/Desktop/verify/dual-issue/tb_trace.sv,1773720218,systemVerilog,,,,tb_trace,,,,,,,,
