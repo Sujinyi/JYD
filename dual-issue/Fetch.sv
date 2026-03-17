@@ -10,6 +10,7 @@ module Fetch#(
     input  logic [31:0] branch_target,
     input  logic [63:0] irom_inst,
     output logic        irom_rd_en,
+    output logic        irom_flush,
     output logic [31:0] irom_addr,
     output logic        fetch_valid,
     output logic [63:0] fetch_inst,
@@ -31,6 +32,7 @@ module Fetch#(
     end
 
     assign irom_rd_en = fetch_accept && !branch_request;
+    assign irom_flush = branch_request;
     assign irom_addr = pc_f_q;
 
     always_ff @(posedge clk) begin

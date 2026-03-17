@@ -33,6 +33,7 @@ module Fronted#(
 
 
     output logic irom_rd_en,   
+    output logic irom_flush,
     output logic [31:0] irom_addr,
     output logic fetch0_valid,
     output logic [31:0] fetch0_inst,
@@ -65,6 +66,7 @@ module Fronted#(
         .branch_target(branch_target),
         .irom_inst(irom_inst),
         .irom_rd_en(irom_rd_en),
+        .irom_flush(irom_flush),
         .irom_addr(irom_addr),
         .fetch_valid(fetch_valid_w),
         .fetch_inst(fetch_inst_w),

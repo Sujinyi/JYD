@@ -18,6 +18,7 @@ module miniRV_SoC (
 );
 
     logic        i_rd_en;
+    logic        i_flush;
     logic [63:0] i_rdata;
     logic [31:0] i_addr;
     logic [31:0] d_addr;
@@ -31,6 +32,7 @@ module miniRV_SoC (
         .irom_addr           (i_addr),
         .irom_inst           (i_rdata),
         .irom_rd_en          (i_rd_en),
+        .irom_flush          (i_flush),
         .dram_addr           (d_addr),
         .dram_data_wr        (d_wdata),
         .dram_wr             (d_wen),
@@ -51,7 +53,7 @@ module miniRV_SoC (
         .ADDR_BITS(16)
     ) Mem_IROM (
         .clk (fpga_clk),
-        .rst (fpga_rst),
+        .rst (fpga_rst || i_flush),
         .en  (i_rd_en),
         .a   (i_addr[17:2]),
         .spo (i_rdata)

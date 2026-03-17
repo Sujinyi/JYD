@@ -11,6 +11,7 @@ module CORE #(
     output logic [31:0] irom_addr,
     input  logic [63:0] irom_inst,
     output logic        irom_rd_en,
+    output logic        irom_flush,
 
     // Data Memory Interface (32-bit BRAM style)
     output logic [31:0] dram_addr,
@@ -95,6 +96,7 @@ module CORE #(
         .branch_request(br_req),
         .branch_target(br_target),
         .irom_rd_en(irom_rd_en),
+        .irom_flush(irom_flush),
         .irom_addr(irom_addr),
         .fetch0_valid(f0_valid),
         .fetch0_inst(f0_inst),
