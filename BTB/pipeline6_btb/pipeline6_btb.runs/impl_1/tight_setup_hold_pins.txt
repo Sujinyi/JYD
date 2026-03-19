@@ -1,0 +1,38 @@
++====================+===================+====================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                |
++====================+===================+====================================================================+
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[7]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[11]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[12]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[17]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[30]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[2]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[3]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[10]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[27]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[16]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[4]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[26]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[5]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[19]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[8]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[25]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[23]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[28]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[29]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[15]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[20]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[1]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[21]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[6]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[9]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[22]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[24]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[31]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[14]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[13]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[18]/D |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/SegReg_LS_WB_inst/mem_rdata_wb_reg[0]/D  |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/BPU_inst/btb_valid_reg[62]/D             |
+| clk_out2_pll       | clk_out2_pll      | student_top_inst/Core_cpu/BPU_inst/btb_valid_reg[33]/D             |
++--------------------+-------------------+--------------------------------------------------------------------+

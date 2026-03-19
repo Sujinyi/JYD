@@ -1,0 +1,59 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/ALU.sv" into library work
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/BPU.sv" into library work
+INFO: [VRFC 10-311] analyzing module BPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Branch.sv" into library work
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Bridge.sv" into library work
+INFO: [VRFC 10-311] analyzing module Bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/config.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv" into library work
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Decode.sv" into library work
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/display_seg.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/dram_driver.sv" into library work
+INFO: [VRFC 10-311] analyzing module dram_driver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Hazard.sv" into library work
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/MiniRVCPU.sv" into library work
+INFO: [VRFC 10-311] analyzing module miniRV_SoC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" into library work
+INFO: [VRFC 10-311] analyzing module Mux2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv" into library work
+INFO: [VRFC 10-311] analyzing module Mux4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/NPC_Mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module NPC_Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/PC.sv" into library work
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv" into library work
+INFO: [VRFC 10-311] analyzing module perip_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Read_Ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module Read_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Regfile.sv" into library work
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/seg7.sv" into library work
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_EX_LS.sv" into library work
+INFO: [VRFC 10-311] analyzing module SegReg_EX_LS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_ID_EX.sv" into library work
+INFO: [VRFC 10-311] analyzing module SegReg_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF1_IF2.sv" into library work
+INFO: [VRFC 10-311] analyzing module SegReg_IF1_IF2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF2_ID.sv" into library work
+INFO: [VRFC 10-311] analyzing module SegReg_IF2_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_LS_WB.sv" into library work
+INFO: [VRFC 10-311] analyzing module SegReg_LS_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/top.sv" into library work
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module twin_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/BTFN/BTB/src/Write_Ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module Write_Ctrl

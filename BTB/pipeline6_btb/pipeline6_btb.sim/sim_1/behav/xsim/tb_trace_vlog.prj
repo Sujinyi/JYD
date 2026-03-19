@@ -1,0 +1,42 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "../../../../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../../src/ALU.sv" \
+"../../../../../src/BPU.sv" \
+"../../../../../src/Branch.sv" \
+"../../../../../src/CPU.sv" \
+"../../../../../src/Decode.sv" \
+"../../../../../src/Hazard.sv" \
+"../../../../../src/Mux2_1.sv" \
+"../../../../../src/Mux4_1.sv" \
+"../../../../../src/NPC_Mux.sv" \
+"../../../../../src/PC.sv" \
+"../../../../../src/Read_Ctrl.sv" \
+"../../../../../src/Regfile.sv" \
+"../../../../../src/SegReg_EX_LS.sv" \
+"../../../../../src/SegReg_ID_EX.sv" \
+"../../../../../src/SegReg_IF1_IF2.sv" \
+"../../../../../src/SegReg_IF2_ID.sv" \
+"../../../../../src/SegReg_LS_WB.sv" \
+"../../../../../src/Write_Ctrl.sv" \
+"../../../../../src/counter.sv" \
+"../../../../../src/display_seg.sv" \
+"../../../../../src/dram_driver.sv" \
+"../../../../../src/perip_bridge.sv" \
+"../../../../../src/seg7.sv" \
+"../../../../../src/student_top.sv" \
+"../../../../../src/top.sv" \
+"../../../../../src/twin_controller.sv" \
+"../../../../../src/uart.sv" \
+"../../../../../sim/tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

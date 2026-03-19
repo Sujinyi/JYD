@@ -1,0 +1,101 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 16 -L xil_defaultlib -L blk_mem_gen_v8_4_8 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 16 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'alu_op_id' [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:195]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'alu_op_ex' [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:211]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/BPU.sv" Line 2. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/NPC_Mux.sv" Line 1. Module NPC_Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/PC.sv" Line 1. Module PC(RESET_VALUE=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF1_IF2.sv" Line 1. Module SegReg_IF1_IF2(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF2_ID.sv" Line 1. Module SegReg_IF2_ID(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Regfile.sv" Line 1. Module Regfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_ID_EX.sv" Line 1. Module SegReg_ID_EX(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv" Line 1. Module Mux4_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv" Line 1. Module Mux4_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_EX_LS.sv" Line 1. Module SegReg_EX_LS(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Write_Ctrl.sv" Line 2. Module Write_Ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Read_Ctrl.sv" Line 2. Module Read_Ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_LS_WB.sv" Line 1. Module SegReg_LS_WB(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Hazard.sv" Line 2. Module Hazard doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/BPU.sv" Line 2. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/NPC_Mux.sv" Line 1. Module NPC_Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/PC.sv" Line 1. Module PC(RESET_VALUE=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF1_IF2.sv" Line 1. Module SegReg_IF1_IF2(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF2_ID.sv" Line 1. Module SegReg_IF2_ID(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Regfile.sv" Line 1. Module Regfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_ID_EX.sv" Line 1. Module SegReg_ID_EX(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv" Line 1. Module Mux4_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv" Line 1. Module Mux4_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_EX_LS.sv" Line 1. Module SegReg_EX_LS(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Write_Ctrl.sv" Line 2. Module Write_Ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Read_Ctrl.sv" Line 2. Module Read_Ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_LS_WB.sv" Line 1. Module SegReg_LS_WB(PC_RESET_VAL=32'b10000000000000000000000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv" Line 1. Module Mux2_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/BTFN/BTB/src/Hazard.sv" Line 2. Module Hazard doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=6,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.BPU_default
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS_WB(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="kin...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="kin...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.dram_driver
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav

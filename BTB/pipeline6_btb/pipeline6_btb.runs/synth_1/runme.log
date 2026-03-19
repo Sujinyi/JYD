@@ -1,0 +1,468 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Mar 19 21:53:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Device 21-9227] Part: xc7k325tffg900-2 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17732
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1510.605 ; gain = 448.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/21186/Desktop/BTFN/BTB/src/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pll' [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv:22]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv:72]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv:147]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'twin_controller' [C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'twin_controller' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'student_top' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'BPU' [C:/Users/21186/Desktop/BTFN/BTB/src/BPU.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'BPU' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/BPU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'NPC_Mux' [C:/Users/21186/Desktop/BTFN/BTB/src/NPC_Mux.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_Mux' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/NPC_Mux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/21186/Desktop/BTFN/BTB/src/PC.sv:1]
+	Parameter RESET_VALUE bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/PC.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF1_IF2' [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF1_IF2.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF1_IF2' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF1_IF2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF2_ID' [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF2_ID.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF2_ID' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_IF2_ID.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Decode' [C:/Users/21186/Desktop/BTFN/BTB/src/Decode.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Decode' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Decode.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Regfile' [C:/Users/21186/Desktop/BTFN/BTB/src/Regfile.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Regfile' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Regfile.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_ID_EX' [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_ID_EX.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_ID_EX' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_ID_EX.sv:1]
+WARNING: [Synth 8-689] width (4) of port connection 'alu_op_id' does not match port width (5) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:186]
+WARNING: [Synth 8-689] width (4) of port connection 'alu_op_ex' does not match port width (5) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:202]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_1' [C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_1' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Mux2_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_1' [C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_1' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Mux4_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/21186/Desktop/BTFN/BTB/src/ALU.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/ALU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [C:/Users/21186/Desktop/BTFN/BTB/src/Branch.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Branch.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_EX_LS' [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_EX_LS.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_EX_LS' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_EX_LS.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_Ctrl' [C:/Users/21186/Desktop/BTFN/BTB/src/Write_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Write_Ctrl' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Write_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Read_Ctrl' [C:/Users/21186/Desktop/BTFN/BTB/src/Read_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Read_Ctrl' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Read_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_LS_WB' [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_LS_WB.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_LS_WB' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/SegReg_LS_WB.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Hazard' [C:/Users/21186/Desktop/BTFN/BTB/src/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/CPU.sv:2]
+WARNING: [Synth 8-7071] port 'debug_wb_have_inst' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+WARNING: [Synth 8-7071] port 'debug_wb_pc' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+WARNING: [Synth 8-7071] port 'debug_wb_ena' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+WARNING: [Synth 8-7071] port 'debug_wb_reg' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+WARNING: [Synth 8-7071] port 'debug_wb_value' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+WARNING: [Synth 8-7023] instance 'Core_cpu' of module 'CPU' has 15 connections declared, but only 10 given [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'perip_bridge' [C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'display_seg' [C:/Users/21186/Desktop/BTFN/BTB/src/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Users/21186/Desktop/BTFN/BTB/src/seg7.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/BTFN/BTB/src/seg7.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/seg7.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_seg' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dram_driver' [C:/Users/21186/Desktop/BTFN/BTB/src/dram_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/.Xil/Vivado-11584-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram_driver' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/dram_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/21186/Desktop/BTFN/BTB/src/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/counter.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv:129]
+INFO: [Synth 8-6155] done synthesizing module 'perip_bridge' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'student_top' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/21186/Desktop/BTFN/BTB/src/top.sv:23]
+WARNING: [Synth 8-7129] Port perip_addr[1] in module dram_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port perip_addr[0] in module dram_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port predict_taken_if1[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[4] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Write_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[0] in module BPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1635.176 ; gain = 572.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1635.176 ; gain = 572.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1635.176 ; gain = 572.730
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1635.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Finished Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM'
+Finished Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM'
+Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Finished Parsing XDC File [c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Parsing XDC File [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_pll'. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2_pll'. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out1_pll]'. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out2_pll]'. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/21186/Desktop/BTFN/BTB/constraint/Genesys_riscv.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1736.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1736.102 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'student_top_inst/Mem_IROM' at clock pin 'clka' is different from the actual clock period '5.556', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM' at clock pin 'clka' is different from the actual clock period '5.556', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_sys_clk_n. (constraint file  c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_sys_clk_n. (constraint file  c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for i_sys_clk_p. (constraint file  c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_sys_clk_p. (constraint file  c:/Users/21186/Desktop/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 7).
+Applied set_property KEEP_HIERARCHY = SOFT for student_top_inst/Mem_IROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 54    
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 19    
+	   4 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 57    
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port predict_taken_if1[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[4] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[0] in module BPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------------------------------+------------+----------------+----------------------+---------------+
+|Module Name                          | RTL Object | Inference      | Size (Depth x Width) | Primitives    | 
++-------------------------------------+------------+----------------+----------------------+---------------+
+|\student_top_inst/Core_cpu /BPU_inst | btb_reg    | User Attribute | 64 x 54              | RAM64M x 18   | 
+|\student_top_inst/Core_cpu /BPU_inst | bht_reg    | User Attribute | 64 x 2               | RAM64X1D x 2  | 
++-------------------------------------+------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1736.297 ; gain = 673.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------------------------------+------------+----------------+----------------------+---------------+
+|Module Name                          | RTL Object | Inference      | Size (Depth x Width) | Primitives    | 
++-------------------------------------+------------+----------------+----------------------+---------------+
+|\student_top_inst/Core_cpu /BPU_inst | btb_reg    | User Attribute | 64 x 54              | RAM64M x 18   | 
+|\student_top_inst/Core_cpu /BPU_inst | bht_reg    | User Attribute | 64 x 2               | RAM64X1D x 2  | 
++-------------------------------------+------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1747.039 ; gain = 684.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll           |         1|
+|2     |IROM          |         1|
+|3     |DRAM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |DRAM     |     1|
+|2     |IROM     |     1|
+|3     |pll      |     1|
+|4     |CARRY4   |   100|
+|5     |LUT1     |     7|
+|6     |LUT2     |   127|
+|7     |LUT3     |   107|
+|8     |LUT4     |   361|
+|9     |LUT5     |   572|
+|10    |LUT6     |  1190|
+|11    |MUXF7    |   288|
+|12    |MUXF8    |   144|
+|13    |RAM64M   |    18|
+|14    |RAM64X1D |     2|
+|15    |FDCE     |   296|
+|16    |FDPE     |    13|
+|17    |FDRE     |  1666|
+|18    |FDSE     |     4|
+|19    |IBUF     |     1|
+|20    |OBUF     |    73|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1760.812 ; gain = 597.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1760.812 ; gain = 698.367
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1770.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1778.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 18 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+Synth Design complete | Checksum: 897e7732
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 43 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1778.180 ; gain = 1184.902
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1778.180 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 21:54:28 2026...
