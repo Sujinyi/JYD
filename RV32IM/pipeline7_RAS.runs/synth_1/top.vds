@@ -1,0 +1,677 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Sun Jun 28 12:07:28 2026
+# Process ID         : 25848
+# Current directory  : C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/top.vds
+# Journal file       : C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1\vivado.jou
+# Running On         : KuonjiAlice
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 34142 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36289 MB
+# Available Virtual  : 5326 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24732
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1366.473 ; gain = 539.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'btb_hit_if1', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_update_pc', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:102]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_actual_taken', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_actual_target', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:104]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_update_is_ret', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:105]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_ras_push', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:106]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_ras_pop', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:107]
+INFO: [Synth 8-11241] undeclared symbol 'bpu_ras_push_addr', assumed default net type 'wire' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pll' [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv:22]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv:72]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv:147]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'twin_controller' [C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'twin_controller' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'student_top' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'BPU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'BPU' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv:1]
+WARNING: [Synth 8-689] width (1) of port connection 'update_pc' does not match port width (32) of module 'BPU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:102]
+WARNING: [Synth 8-689] width (1) of port connection 'actual_target' does not match port width (32) of module 'BPU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:104]
+WARNING: [Synth 8-689] width (1) of port connection 'ras_push_addr' does not match port width (32) of module 'BPU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'NPC_Mux' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_Mux' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv:1]
+	Parameter RESET_VALUE bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF1_IF2' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF1_IF2' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_IF2_ID' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_IF2_ID' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Decode' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Decode' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv:2]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_op' does not match port width (4) of module 'Decode' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:180]
+WARNING: [Synth 8-689] width (3) of port connection 'priv_vec' does not match port width (4) of module 'Decode' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:188]
+INFO: [Synth 8-6157] synthesizing module 'Regfile' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Regfile' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'CSR' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'CSR' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_ID_EX' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_ID_EX' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv:1]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_op_id' does not match port width (4) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:234]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_op_ex' does not match port width (4) of module 'SegReg_ID_EX' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:252]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_1' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_1' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_1' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_1' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv:2]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_op' does not match port width (4) of module 'ALU' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:312]
+INFO: [Synth 8-6157] synthesizing module 'MulDiv' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv:139]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv:191]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv:251]
+INFO: [Synth 8-6155] done synthesizing module 'MulDiv' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Priv' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Priv' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_EX_LS1' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_EX_LS1' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_Ctrl' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Write_Ctrl' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_LS1_LS2' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_LS1_LS2' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_Ctrl' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Read_Ctrl' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'SegReg_LS2_WB' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv:1]
+	Parameter PC_RESET_VAL bound to: -2147483648 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SegReg_LS2_WB' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Exp_Commit' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Exp_Commit' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Hazard' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:2]
+WARNING: [Synth 8-7071] port 'debug_wb_have_inst' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+WARNING: [Synth 8-7071] port 'debug_wb_pc' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+WARNING: [Synth 8-7071] port 'debug_wb_ena' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+WARNING: [Synth 8-7071] port 'debug_wb_reg' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+WARNING: [Synth 8-7071] port 'debug_wb_value' of module 'CPU' is unconnected for instance 'Core_cpu' [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+WARNING: [Synth 8-7023] instance 'Core_cpu' of module 'CPU' has 15 connections declared, but only 10 given [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'perip_bridge' [C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'display_seg' [C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_seg' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (0#1) [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/.Xil/Vivado-25848-KuonjiAlice/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv:271]
+INFO: [Synth 8-6155] done synthesizing module 'perip_bridge' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'student_top' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv:23]
+WARNING: [Synth 8-3848] Net bpu_update_pc in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:102]
+WARNING: [Synth 8-3848] Net bpu_actual_taken in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [Synth 8-3848] Net bpu_actual_target in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:104]
+WARNING: [Synth 8-3848] Net bpu_update_is_ret in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:105]
+WARNING: [Synth 8-3848] Net bpu_ras_push in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:106]
+WARNING: [Synth 8-3848] Net bpu_ras_pop in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:107]
+WARNING: [Synth 8-3848] Net bpu_ras_push_addr in module/entity CPU does not have driver. [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:108]
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[31] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[30] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[29] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[28] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[27] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[26] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[25] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[24] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[23] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[22] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[21] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[20] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[19] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[18] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[17] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[16] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[15] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[14] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[13] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[12] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[11] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[10] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[9] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[8] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[7] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[6] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[5] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[3] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mtvec_global[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mtvec_global[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port muldiv_busy[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port predict_taken_if1[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec[2] in module Exp_Commit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec[0] in module Exp_Commit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[4] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Read_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access[3] in module Write_Ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[1] in module CSR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[0] in module CSR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec[3] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_if1[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port update_pc[0] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[1] in module BPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port actual_target[0] in module BPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1513.426 ; gain = 686.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1513.426 ; gain = 686.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1513.426 ; gain = 686.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1513.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Finished Parsing XDC File [c:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Parsing XDC File [c:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/Mem_DRAM'
+Finished Parsing XDC File [c:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/Mem_DRAM'
+Parsing XDC File [c:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Finished Parsing XDC File [c:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Parsing XDC File [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_pll'. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2_pll'. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out1_pll]'. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_out2_pll]'. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1590.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1590.457 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'student_top_inst/Mem_IROM' at clock pin 'clka' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'student_top_inst/bridge_inst/Mem_DRAM' at clock pin 'clka' is different from the actual clock period '3.846', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.707 ; gain = 764.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.707 ; gain = 764.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.707 ; gain = 764.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'MulDiv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                MUL_EXEC |                               01 |                               01
+                MUL_WAIT |                               10 |                               10
+                 DIV_RUN |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'MulDiv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1591.707 ; gain = 764.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 11    
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 37    
++---Registers : 
+	              256 Bit    Registers := 1     
+	               66 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	               33 Bit    Registers := 3     
+	               32 Bit    Registers := 82    
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 24    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 51    
++---Multipliers : 
+	              33x33  Multipliers := 1     
++---Muxes : 
+	   2 Input  256 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 1     
+	   4 Input   33 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 10    
+	   2 Input   32 Bit        Muxes := 47    
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 78    
+	   4 Input    1 Bit        Muxes := 19    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_prod_r0, operation Mode is: A2*B.
+DSP Report: register mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: Generating DSP mul_prod_r_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_prod_r_reg is absorbed into DSP mul_prod_r_reg.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r_reg.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r_reg.
+DSP Report: Generating DSP mul_prod_r0, operation Mode is: A2*B2.
+DSP Report: register mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: register mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r0.
+DSP Report: Generating DSP mul_prod_r_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_prod_r_reg is absorbed into DSP mul_prod_r_reg.
+DSP Report: register mul_prod_r_reg is absorbed into DSP mul_prod_r_reg.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r_reg.
+DSP Report: operator mul_prod_r0 is absorbed into DSP mul_prod_r_reg.
+WARNING: [Synth 8-7129] Port mem_access_ex[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_ex[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[31] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[30] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[29] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[28] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[27] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[26] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[25] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[24] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[23] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[22] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[21] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[20] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[19] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[18] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[17] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[16] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[15] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[14] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[13] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[12] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[11] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[10] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[9] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[8] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[7] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[6] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[5] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[4] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[3] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_wb[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mtvec_global[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mtvec_global[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[2] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[1] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port priv_vec_wb[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port muldiv_busy[0] in module Hazard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port predict_taken_if1[0] in module Hazard is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[47]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[46]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[45]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[44]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[43]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[42]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[41]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[40]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[39]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[38]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[37]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[36]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[35]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[34]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[33]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[32]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[31]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[30]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[29]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[28]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[27]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[26]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[25]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[24]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[23]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[22]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[21]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[20]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[19]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[18]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[17]) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[47]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[46]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[45]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[44]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[43]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[42]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[41]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[40]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[39]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[38]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[37]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[36]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[35]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[34]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[33]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[32]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[31]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[30]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[29]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[28]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[27]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[26]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[25]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[24]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[23]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[22]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[21]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[20]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[19]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[18]__0) is unused and will be removed from module MulDiv.
+WARNING: [Synth 8-3332] Sequential element (mul_prod_r_reg[17]__0) is unused and will be removed from module MulDiv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1718.930 ; gain = 891.711
+---------------------------------------------------------------------------------
+ Sort Area is  mul_prod_r0_0 : 0 0 : 2737 5113 : Used 1 time 0
+ Sort Area is  mul_prod_r0_0 : 0 1 : 2376 5113 : Used 1 time 0
+ Sort Area is  mul_prod_r0_3 : 0 0 : 2322 4453 : Used 1 time 0
+ Sort Area is  mul_prod_r0_3 : 0 1 : 2131 4453 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MulDiv      | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|MulDiv      | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MulDiv      | A2*B2           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MulDiv      | (PCIN>>17)+A2*B | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1774.906 ; gain = 947.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1874.762 ; gain = 1047.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1907.336 ; gain = 1080.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MulDiv      | A'*B'             | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MulDiv      | (PCIN>>17+A'*B')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|MulDiv      | (A*B)'            | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|MulDiv      | (PCIN>>17+A'*B')' | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll           |         1|
+|2     |IROM          |         1|
+|3     |DRAM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DRAM    |     1|
+|2     |IROM    |     1|
+|3     |pll     |     1|
+|4     |CARRY4  |   158|
+|5     |DSP48E1 |     4|
+|8     |LUT1    |    72|
+|9     |LUT2    |   307|
+|10    |LUT3    |   359|
+|11    |LUT4    |   475|
+|12    |LUT5    |   461|
+|13    |LUT6    |  1728|
+|14    |MUXF7   |   272|
+|15    |MUXF8   |   136|
+|16    |FDCE    |   678|
+|17    |FDPE    |    13|
+|18    |FDRE    |  2255|
+|19    |FDSE    |     7|
+|20    |IBUF    |     1|
+|21    |OBUF    |    73|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 116 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 2042.250 ; gain = 1136.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2042.250 ; gain = 1215.031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2051.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 570 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2060.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d55e665
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 188 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 2060.930 ; gain = 1479.277
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2060.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 12:08:26 2026...

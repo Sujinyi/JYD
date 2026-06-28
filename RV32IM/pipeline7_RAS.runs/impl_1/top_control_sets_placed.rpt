@@ -1,0 +1,143 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2.1 (win64) Build 6403652 Thu Mar 19 19:48:24 GMT 2026
+| Date         : Sun Jun 28 12:10:07 2026
+| Host         : KuonjiAlice running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k325t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    65 |
+|    Minimum number of control sets                        |    65 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    94 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    65 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    53 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |           12 |
+| No           | No                    | Yes                    |             277 |           81 |
+| No           | Yes                   | No                     |             224 |          113 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             414 |          115 |
+| Yes          | Yes                   | No                     |            2031 |          869 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|       Clock Signal      |                               Enable Signal                               |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|  pll_inst/inst/clk_out1 | uart_inst/tx_i_1_n_0                                                      | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1 | uart_inst/rx_bit_cnt[0]                                                   | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1 | uart_inst/tx_bit_cnt[0]                                                   | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1 | twin_controller_inst/send_cnt[4]_i_1_n_0                                  | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              5 |         5.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/MulDiv_inst/div_cnt[5]_i_1_n_0                  | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                2 |              6 |         3.00 |
+|  pll_inst/inst/clk_out1 | twin_controller_inst/tx_start_next                                        | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1 | uart_inst/rx_data[7]_i_1_n_0                                              | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              8 |         8.00 |
+|  pll_inst/inst/clk_out1 | uart_inst/rx_shift_1[0]                                                   | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                1 |              8 |         8.00 |
+|  pll_inst/inst/clk_out1 | uart_inst/tx_shift[0]                                                     | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                2 |              9 |         4.50 |
+|  pll_inst/inst/clk_out1 | uart_inst/rx_cnt_2[0]                                                     | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                3 |             13 |         4.33 |
+|  pll_inst/inst/clk_out1 | uart_inst/rx_ready_cnt[12]_i_1_n_0                                        | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                3 |             13 |         4.33 |
+|  pll_inst/inst/clk_out1 | uart_inst/tx_cnt_0[0]                                                     | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                3 |             13 |         4.33 |
+|  pll_inst/inst/clk_out1 |                                                                           | student_top_inst/bridge_inst/counter_inst/cnt_1ms[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out2 |                                                                           |                                                              |               12 |             17 |         1.42 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_0[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               26 |             32 |         1.23 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_3[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               21 |             32 |         1.52 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_1[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               20 |             32 |         1.60 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_2[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               16 |             32 |         2.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_5[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               14 |             32 |         2.29 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_6[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               25 |             32 |         1.28 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_7[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               20 |             32 |         1.60 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_4[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               15 |             32 |         2.13 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_9[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               22 |             32 |         1.45 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_10[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               13 |             32 |         2.46 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_3[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               16 |             32 |         2.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_8[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               24 |             32 |         1.33 |
+|  pll_inst/inst/clk_out2 | student_top_inst/bridge_inst/led_tx_data_cpu[31]_i_1_n_0                  | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               11 |             32 |         2.91 |
+|  pll_inst/inst/clk_out2 | student_top_inst/bridge_inst/seg_tx_data_cpu[31]_i_1_n_0                  | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[10]_1[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               16 |             32 |         2.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_1[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               18 |             32 |         1.78 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_3[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               10 |             32 |         3.20 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_6[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               17 |             32 |         1.88 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_1[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               16 |             32 |         2.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[10]_0[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               21 |             32 |         1.52 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[10]_2[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               16 |             32 |         2.00 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_7[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[10]_3[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               18 |             32 |         1.78 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_4[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               15 |             32 |         2.13 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_5[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               12 |             32 |         2.67 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_EX_LS1_inst/alu_result_ls1_reg[5]_0      | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               10 |             32 |         3.20 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_EX_LS1_inst/alu_result_ls1_reg[17]_0     | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/E[0]                          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/FSM_sequential_cs_reg[1][0]   | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               11 |             32 |         2.91 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_6[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               22 |             32 |         1.45 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_9[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               20 |             32 |         1.60 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[8]_0[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               19 |             32 |         1.68 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_2[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               12 |             32 |         2.67 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[11]_2[0]         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               17 |             32 |         1.88 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_4[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_5[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               10 |             32 |         3.20 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_7[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               18 |             32 |         1.78 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/inst_wb_reg[9]_8[0]          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                7 |             32 |         4.57 |
+|  pll_inst/inst/clk_out1 | student_top_inst/bridge_inst/counter_inst/cnt_ms[0]_i_1_n_0               | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                8 |             32 |         4.00 |
+|  pll_inst/inst/clk_out1 | student_top_inst/bridge_inst/led_ack_toggle_cnt0                          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               13 |             33 |         2.54 |
+|  pll_inst/inst/clk_out1 | student_top_inst/bridge_inst/seg_ack_toggle_cnt0                          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |                8 |             33 |         4.12 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/MulDiv_inst/mul_prod_r[0]                       | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               12 |             34 |         2.83 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/FSM_sequential_cs_reg[0]_0[0] | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               11 |             35 |         3.18 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/FSM_sequential_cs_reg[0][0]   | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               28 |             95 |         3.39 |
+|  pll_inst/inst/clk_out1 |                                                                           | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               32 |            100 |         3.12 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/priv_vec_ex_reg[0]_0          | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               18 |            105 |         5.83 |
+|  pll_inst/inst/clk_out1 | uart_inst/E[0]                                                            | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               36 |            134 |         3.72 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/is_muldiv_ex_reg[0]_4[0]      | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               81 |            154 |         1.90 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_ID_EX_inst/is_muldiv_ex[0]_i_1_n_0       | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |               48 |            211 |         4.40 |
+|  pll_inst/inst/clk_out2 | student_top_inst/Core_cpu/SegReg_LS2_WB_inst/E[0]                         | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |              107 |            271 |         2.53 |
+|  pll_inst/inst/clk_out2 |                                                                           | student_top_inst/Core_cpu/Regfile_inst/rst[0]                |              158 |            385 |         2.44 |
++-------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+
+

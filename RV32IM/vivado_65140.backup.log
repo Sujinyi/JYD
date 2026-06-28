@@ -1,0 +1,1000 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Tue May 12 16:08:21 2026
+# Process ID         : 65140
+# Current directory  : C:/Users/21186/Desktop/test/BTFN/RV32IM
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent65552 C:\Users\21186\Desktop\test\BTFN\RV32IM\pipeline7_RAS.xpr
+# Log file           : C:/Users/21186/Desktop/test/BTFN/RV32IM/vivado.log
+# Journal file       : C:/Users/21186/Desktop/test/BTFN/RV32IM\vivado.jou
+# Running On         : KuonjiAlice
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 34142 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 68501 MB
+# Available Virtual  : 51293 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu200:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu200\1.0\board.xml as part xcsu200p-sbva1024-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk165_es:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk165\es\1.0\board.xml as part xcvr1652-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/21186/Desktop/test/BTFN/pipeline7_RAS' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu200:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu200\1.0\board.xml as part xcsu200p-sbva1024-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado25/2025.2.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1769.688 ; gain = 232.770
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/test/BTFN/BTB/coe/dram.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/test/BTFN/BTB/coe/dram.coe
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/BTFN/BTB/coe/irom.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/BTFN/BTB/coe/irom.coe
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/test/src0/irom.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/test/src0/irom.coe
+export_ip_user_files -of_objects  [get_files C:/Users/21186/Desktop/test/src1/irom.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/21186/Desktop/test/src1/irom.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/dram.coe' provided. It will be converted relative to IP Instance files '../../../../coe/withMext/dram.coe'
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/dram.coe} [get_ips DRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/dram.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withMext/dram.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/dram.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withMext/dram.coe'
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DRAM'...
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+reset_run DRAM_synth_1
+launch_runs DRAM_synth_1 -jobs 16
+[Tue May 12 16:12:47 2026] Launched DRAM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/DRAM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset DRAM] C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/DRAM_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci' from fileset 'DRAM' to fileset 'sources_1'.
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DRAM'...
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci]
+launch_runs DRAM_synth_1 -jobs 16
+[Tue May 12 16:13:32 2026] Launched DRAM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/DRAM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../../coe/withMext/irom.coe'
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/irom.coe} [get_ips IROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withMext/irom.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withMext/irom.coe'
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1
+
+launch_runs IROM_synth_1 -jobs 16
+[Tue May 12 16:14:48 2026] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset IROM] C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci' from fileset 'IROM' to fileset 'sources_1'.
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+launch_runs IROM_synth_1 -jobs 16
+[Tue May 12 16:15:06 2026] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:15:50 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado25/2025.2.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado25/2025.2.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_trace' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/dram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/irom.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_trace_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Commit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Read_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_EX_LS1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF1_IF2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF2_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS1_LS2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS2_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Write_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_trace
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" Line 1. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" Line 2. Module CSR_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=6,CLKIN1...
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.BPU_default
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.CSR_default
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MulDiv
+Compiling module xil_defaultlib.Priv
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS1(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.SegReg_LS1_LS2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS2_WB(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Exp_Commit
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1817.586 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_trace_behav -key {Behavioral:sim_1:Functional:tb_trace} -tclbatch {tb_trace.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_trace.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.Mem_DRAM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_trace_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2049.289 ; gain = 231.703
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_trace/uut/student_top_inst/virtual_led}} {{/tb_trace/uut/student_top_inst/virtual_seg}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_trace/uut/student_top_inst/perip_wdata}} 
+run all
+Hit termination condition: PC == 80000010
+$finish called at time : 7220416 ps : File "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" Line 87
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:23:05 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado25/2025.2.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado25/2025.2.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_trace' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/dram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/irom.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_trace_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Commit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Read_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_EX_LS1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF1_IF2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF2_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS1_LS2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS2_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Write_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perip_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twin_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_trace
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:23:07 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" Line 1. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" Line 2. Module CSR_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=6,CLKIN1...
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.BPU_default
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.CSR_default
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MulDiv
+Compiling module xil_defaultlib.Priv
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS1(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.SegReg_LS1_LS2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS2_WB(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Exp_Commit
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3162.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3162.520 ; gain = 0.000
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.Mem_DRAM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3162.520 ; gain = 0.000
+run all
+Hit termination condition: PC == 80000010
+$finish called at time : 12666249 ps : File "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" Line 87
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_trace/uut/student_top_inst/bridge_inst/seg_wdata_cpu}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:24:15 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_trace_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:24:16 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.Mem_DRAM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run all
+Hit termination condition: PC == 80000010
+$finish called at time : 12666249 ps : File "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" Line 87
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withoutMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../../coe/withoutMext/irom.coe'
+set_property CONFIG.Coe_File {C:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withoutMext/irom.coe} [get_ips IROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withoutMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withoutMext/irom.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/21186/Desktop/test/BTFN/RV32IM/coe/withoutMext/irom.coe' provided. It will be converted relative to IP Instance files '../../../RV32IM/coe/withoutMext/irom.coe'
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1
+
+launch_runs IROM_synth_1 -jobs 16
+[Tue May 12 16:28:44 2026] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset IROM] C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci' from fileset 'IROM' to fileset 'sources_1'.
+generate_target all [get_files  C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci]
+launch_runs IROM_synth_1 -jobs 16
+[Tue May 12 16:29:03 2026] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.runs/IROM_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/modelsim} {questa=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/questa} {riviera=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/riviera} {activehdl=C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci] -directory C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files -ipstatic_source_dir C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:30:03 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado25/2025.2.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado25/2025.2.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_trace' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/dram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/irom.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim/irom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_trace_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Commit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Read_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_EX_LS1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF1_IF2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF2_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS1_LS2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS2_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Write_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perip_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twin_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_trace
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" Line 1. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" Line 2. Module CSR_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=6,CLKIN1...
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.BPU_default
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.CSR_default
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MulDiv
+Compiling module xil_defaultlib.Priv
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS1(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.SegReg_LS1_LS2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS2_WB(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Exp_Commit
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3162.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_trace_behav -key {Behavioral:sim_1:Functional:tb_trace} -tclbatch {tb_trace.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_trace.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.Mem_DRAM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_trace_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 3162.520 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_trace/uut/student_top_inst/bridge_inst/seg_driver}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_trace/uut/student_top_inst}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_trace/uut/student_top_inst/bridge_inst}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:31:47 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_trace_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue May 12 16:31:48 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_trace'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_behav xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.Mem_IROM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_trace.uut.student_top_inst.bridge_inst.Mem_DRAM.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run all
+Hit termination condition: PC == 80000010
+$finish called at time : 9949583 ps : File "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" Line 87
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 12 16:35:37 2026...

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_muldiv_latency_sim/xsimk.exe -runall -simmode gui -wdb tb_muldiv_latency_sim.wdb -simrunnum 0 -socket 57222
+Design successfully loaded
+Design Loading Memory Usage: 9800 KB (Peak: 9800 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 10236 KB (Peak: 10236 KB)
+Simulation CPU Usage: 31 ms

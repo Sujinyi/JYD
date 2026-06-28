@@ -1,0 +1,72 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/BTFN/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21186/Desktop/test/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Exp_commit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Commit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Hazard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Mux4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/NPC_Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Priv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Read_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Read_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_EX_LS1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_EX_LS1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_ID_EX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF1_IF2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF1_IF2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_IF2_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_IF2_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS1_LS2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS1_LS2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/SegReg_LS2_WB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegReg_LS2_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Write_Ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Write_Ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perip_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twin_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_trace

@@ -1,0 +1,17 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.ip_user_files/ip/DRAM/DRAM_stub.v,1773969795,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.ip_user_files/ip/pll/pll_stub.v,,DRAM,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/pipeline6_btb/pipeline6_btb.ip_user_files/ip/pll/pll_stub.v,1775262227,systemVerilog,,,,pll,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/counter.sv,1775259839,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv,,counter,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/display_seg.sv,1745391809,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/counter.sv,,display_seg,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/perip_bridge.sv,1775481669,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv,,perip_bridge,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/seg7.sv,1744944208,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/display_seg.sv,,seg7,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv,1775000485,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/top.sv,,student_top,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/top.sv,1773927489,systemVerilog,,C:/Users/21186/Desktop/BTFN/pipeline7_RAS/pipeline7_RAS.ip_user_files/ip/IROM/sim/IROM.v,,top,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/twin_controller.sv,1745397104,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv,,twin_controller,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/BTFN/BTB/src/uart.sv,1745396737,systemVerilog,,C:/Users/21186/Desktop/BTFN/BTB/src/student_top.sv,,uart,,,../BTB/src;core_src,,,,,
+C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv,1778594721,systemVerilog,,C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_muldiv_latency.sv,C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/config.sv,MulDiv,,,core_src,,,,,
+C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/config.sv,1778572951,verilog,,,,,,,,,,,,
+C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_muldiv_latency.sv,1778594676,systemVerilog,,,C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/config.sv,tb_muldiv_latency,,,core_src,,,,,

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue May 12 22:05:41 2026
+# Process ID: 69524
+# Current directory: C:/Users/21186/Desktop/test/BTFN/RV32IM
+# Command line: xsim.exe -mode tcl -source {xsim.dir/tb_muldiv_latency_sim/xsim_script.tcl}
+# Log file: C:/Users/21186/Desktop/test/BTFN/RV32IM/xsim.log
+# Journal file: C:/Users/21186/Desktop/test/BTFN/RV32IM\xsim.jou
+# Running On        :KuonjiAlice
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency     :2495 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :34142 MB
+# Swap memory       :34359 MB
+# Total Virtual     :68501 MB
+# Available Virtual :39960 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_muldiv_latency_sim/xsim_script.tcl
+# xsim {tb_muldiv_latency_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+$finish called at time : 66 ns : File "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_muldiv_latency.sv" Line 72
+exit
+INFO: [Common 17-206] Exiting xsim at Tue May 12 22:05:43 2026...
