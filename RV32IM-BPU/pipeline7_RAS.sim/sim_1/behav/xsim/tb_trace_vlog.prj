@@ -1,0 +1,46 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "E:/Vivado25/2025.2.1/Vivado/data/rsb/busdef" --include "../../../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../../pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "E:/Vivado25/2025.2.1/Vivado/data/rsb/busdef" --include "../../../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../core_src/ALU.sv" \
+"../../../../core_src/BPU.sv" \
+"../../../../core_src/Branch.sv" \
+"../../../../core_src/CPU.sv" \
+"../../../../core_src/CSR.sv" \
+"../../../../core_src/Decode.sv" \
+"../../../../core_src/Exp_commit.sv" \
+"../../../../core_src/Hazard.sv" \
+"../../../../core_src/MulDiv.sv" \
+"../../../../core_src/Mux2_1.sv" \
+"../../../../core_src/Mux4_1.sv" \
+"../../../../core_src/NPC_Mux.sv" \
+"../../../../core_src/PC.sv" \
+"../../../../core_src/Priv.sv" \
+"../../../../core_src/Read_Ctrl.sv" \
+"../../../../core_src/Regfile.sv" \
+"../../../../core_src/SegReg_EX_LS1.sv" \
+"../../../../core_src/SegReg_ID_EX.sv" \
+"../../../../core_src/SegReg_IF1_IF2.sv" \
+"../../../../core_src/SegReg_IF2_ID.sv" \
+"../../../../core_src/SegReg_LS1_LS2.sv" \
+"../../../../core_src/SegReg_LS2_WB.sv" \
+"../../../../core_src/Write_Ctrl.sv" \
+"../../../../../BTB/src/counter.sv" \
+"../../../../../BTB/src/display_seg.sv" \
+"../../../../../BTB/src/perip_bridge.sv" \
+"../../../../../BTB/src/seg7.sv" \
+"../../../../../BTB/src/student_top.sv" \
+"../../../../../BTB/src/top.sv" \
+"../../../../../BTB/src/twin_controller.sv" \
+"../../../../../BTB/src/uart.sv" \
+"../../../../pipeline7_RAS.srcs/sim_1/new/tb_trace.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

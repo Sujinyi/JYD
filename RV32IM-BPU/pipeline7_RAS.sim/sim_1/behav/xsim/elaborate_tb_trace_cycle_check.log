@@ -1,0 +1,75 @@
+Vivado Simulator v2025.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado25/2025.2.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_12 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_trace_cycle_check xil_defaultlib.tb_trace xil_defaultlib.glbl -log elaborate_tb_trace_cycle_check.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'update_pc' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'actual_target' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ras_push_addr' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:103]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:171]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'priv_vec' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:179]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_id' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:225]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op_ex' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:243]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'alu_op' [C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv:303]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CPU.sv" Line 2. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/BPU.sv" Line 1. Module BPU_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Decode.sv" Line 2. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/CSR.sv" Line 2. Module CSR_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/Branch.sv" Line 2. Module Branch doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.BPU_default
+Compiling module xil_defaultlib.NPC_Mux
+Compiling module xil_defaultlib.PC(RESET_VALUE=32'b1000000000000...
+Compiling module xil_defaultlib.SegReg_IF1_IF2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.SegReg_IF2_ID(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.CSR_default
+Compiling module xil_defaultlib.SegReg_ID_EX(PC_RESET_VAL=32'b10...
+Compiling module xil_defaultlib.Mux2_1
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MulDiv
+Compiling module xil_defaultlib.Priv
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.SegReg_EX_LS1(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Write_Ctrl
+Compiling module xil_defaultlib.SegReg_LS1_LS2(PC_RESET_VAL=32'b...
+Compiling module xil_defaultlib.Read_Ctrl
+Compiling module xil_defaultlib.SegReg_LS2_WB(PC_RESET_VAL=32'b1...
+Compiling module xil_defaultlib.Exp_Commit
+Compiling module xil_defaultlib.Hazard
+Compiling module xil_defaultlib.CPU
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="ki...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_trace
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_trace_cycle_check

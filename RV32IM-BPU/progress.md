@@ -1,0 +1,38 @@
+# Progress log
+
+- 2026-07-17: Started fresh task to apply the EX-valid BPU recovery fix to this Vivado project and regenerate the bitstream. Loaded FPGA, SystemVerilog, verification, and file-planning guidance; preserved existing project state.
+- 2026-07-17: Logged a read-only PowerShell formatting error from the first source-hash comparison attempt; no project files were affected.
+- 2026-07-17: Confirmed active XPR source selection and exact source delta. BPU/update wiring is already correct; only EX-valid Hazard gating is missing. No Vivado process is active.
+- 2026-07-17: Applied the two-line-interface EX-valid repair. CPU/Hazard/BPU now byte-match the Verilator-verified source; obsolete implicit BPU update nets are absent.
+- 2026-07-17: Reviewed generated synth/implementation Tcl. Selected direct run-Tcl execution as the safest normal Vivado flow for this project, preserving all project-selected sources, IP, and constraints.
+- 2026-07-17: Started fresh synthesis. The shell launcher timed out while Vivado continued in the background as PID 47032; monitoring shifted to that exact PID/log without relaunching.
+- 2026-07-17: Fresh synthesis completed successfully: 0 errors, 0 critical warnings, and a new `synth_1/top.dcp` at 17:18:46.
+- 2026-07-17: Confirmed BPU implicit/undriven warnings are absent, then started implementation through write_bitstream as Vivado PID 32288.
+- 2026-07-17: Placement completed and phys_opt is running. Intermediate timing is WNS -1.198 ns / TNS -862.892 ns; no fatal implementation error observed.
+- 2026-07-17: Routing completed. Setup timing remains open at WNS -0.867 ns/TNS -713.588 ns, hold is clean, and pre-bitstream DRC reports 0 errors. Bitstream writing started.
+- 2026-07-17: Bitstream generation completed successfully. Produced `pipeline7_RAS.runs/impl_1/top.bit` (11,443,730 bytes, 17:22:46). Final timing report: 200 MHz, WNS -0.861 ns/TNS -706.221 ns, hold clean. Source hashes still match the Verilator-verified CPU/Hazard/BPU.
+
+- 2026-07-17: Started DCache architecture research. Loaded brainstorming, FPGA, SystemVerilog, and file-planning guidance.
+- 2026-07-17: Session catch-up helper returned exit code 1 with no output; initialized a new research plan.
+- 2026-07-17: Inspected current pipeline, CPU data bus, hazard logic, source hierarchy, and MMIO boundary. Confirmed that variable miss latency is not represented by the current bus.
+- 2026-07-17: Located active DRAM/MMIO decode, confirmed 256 KiB BRAM address range, read latency 1, and an active 260 MHz PLL target.
+- 2026-07-17: User corrected scope: pivoted from generic DCache integration to reverse-engineering the group member's throughput technique; course material remains a baseline comparison only.
+- 2026-07-17: Re-read the chat screenshots at original resolution and separated implemented facts from speculative future ideas. The measured gain is best explained by a one-cycle cache-hit bypass around a two-cycle pipelined backing-memory path.
+- 2026-07-17: Checked routed timing. Current 260 MHz build has WNS -1.646 ns; worst paths are global forwarding/flush/control rather than DRAM, constraining how a cache/hash can be inserted.
+- 2026-07-17: Read CODH Cache/code documentation and CECS DCache/AXI documentation. Found a strong structural match: two-stage BRAM Tag/Data lookup launched directly from EX, one-cycle hits, write-back/write-allocate, and blocking miss refill.
+- 2026-07-17: Inventoried local DCache materials and found the completed CECS DCache integrated into a CPU. Confirmed direct EX launch, two BRAM ways, one load-use bubble, and whole-pipeline stall on miss.
+- 2026-07-17: Read the completed DCache and integration source. Confirmed 512 B/two-way/four-word-line organization, pipelined one-request-per-cycle hit path, independent read/write RAM paths, and no local hash/prefetch/L0 implementation.
+- 2026-07-17: Extracted and rendered the local 10-page cache PDF. Identified early EX read addressing, separate delayed write addressing, Return Buffer bypass, and overlapping refill/write-back as the main throughput techniques.
+- 2026-07-17: Compared the completed DCache with the Lab7 direct-mapped teaching cache and ranked the local references for the high-IPC/Fmax objective.
+- 2026-07-17: Started a read-only three-environment CPU-core consistency audit covering the Windows Vivado project, `cdp-tests`, and `CECS-Lab`, with register-fanout changes as the primary hypothesis.
+- 2026-07-17: Confirmed the Windows XPR compiles `core_src/`; found that `cdp-tests` builds untracked `mySoC/*.sv`, while CECS-Lab contains several competing CPU snapshots and therefore requires build-script tracing before comparison.
+- 2026-07-17: Normalized source hashes. `cdp-tests` is core-equivalent except config/CSR/MulDiv; CECS-Lab's default `mycpu` differs more broadly, while its on-disk VCPU binary was actually built in dual-issue mode and can remain stale across mode switches.
+- 2026-07-17: Searched RTL, constraints, and implementation logs for fanout directives/replication. Found no manual core duplication; Vivado replicated only two peripheral-counter nets during phys_opt.
+- 2026-07-17: Classified CECS `mycpu` differences: most extra lines are DPI/performance instrumentation; Hazard, Regfile datapath, and pipeline-register topology do not contain a fanout optimization. Isolated BPU/CPU prediction plumbing as the main architectural delta.
+- 2026-07-17: User narrowed the audit to source-level core logic with Vivado as authoritative. Confirmed the real MulDiv input-register stage change (missing from cdp, present in CECS) and a separate Vivado-vs-CECS BPU update-wiring discrepancy.
+- 2026-07-17: Completed the three-environment audit. Neither WSL environment is an exact mirror: cdp is stale in MulDiv/CSR, while CECS has the newer MulDiv and corrected BPU plumbing but its existing executable is a dual-issue build.
+- 2026-07-17: User chose to repair Vivado BPU update wiring and synchronize the single-issue sources. Connected the BPU update ports to the existing EX-stage signals and synchronized `CPU.sv`, `MulDiv.sv`, `CSR.sv`, and `config.sv` to cdp-tests. CECS counter/DPI logic and dual-issue files were left untouched.
+- 2026-07-17: cdp-tests rebuilt successfully with Verilator. User deferred synthetic simulation regression in favor of board-level regression.
+- 2026-07-17: Located the matching installed tool at `E:\Vivado25\2025.2.1\Vivado\bin\vivado.bat`. Synthesis completed and wrote `synth_1/top.dcp`, then Vivado crashed while writing a post-synthesis utilization report (`EXCEPTION_ACCESS_VIOLATION`); this was a tool-process failure after the valid DCP existed, not an RTL synthesis error.
+- 2026-07-17: Ran the generated `impl_1/top.tcl` from that fresh DCP. `write_bitstream` completed successfully and wrote `pipeline7_RAS.runs/impl_1/top.bit` (11,443,730 bytes, 14:53:18). The BPU implicit-undriven-net warnings are absent from the fresh synthesis log. Routed timing is not closed: WNS -2.143 ns, TNS -3249.380 ns, with hold WNS +0.067 ns.
+- 2026-07-17: Restarted as a fresh IROMv2 BPU A/B task. Terminated the two exact lingering CECS processes from the aborted prior run, inventoried the withMext/withoutMext COE/BIN pairs, and began a read-only memory-map/core-alignment audit. No new simulation or RTL edit has started.

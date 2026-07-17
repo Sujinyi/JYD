@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/core_src/MulDiv.sv" into library work
+INFO: [VRFC 10-311] analyzing module MulDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/sim_1/new/tb_muldiv_latency.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_muldiv_latency
