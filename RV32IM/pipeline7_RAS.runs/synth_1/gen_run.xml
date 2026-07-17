@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1782619645" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
-  <File Type="PA-TCL" Name="top.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1782619645" LaunchIncrCheckpoint="$PPRDIR/../../../../Desktop/test/BTFN/RV32IM/pipeline7_RAS.srcs/utils_1/imports/synth_1/top.dcp">
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="top.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
   <File Type="RDS-DCP" Name="top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/coe/withM48/irom-new.coe">
@@ -41,7 +38,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/ip/pll_1/pll.xci">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/pll_1/pll.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -216,56 +213,56 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/counter.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/counter.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/display_seg.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/display_seg.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/perip_bridge.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/perip_bridge.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/seg7.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/seg7.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/student_top.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/student_top.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/twin_controller.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/twin_controller.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/uart.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/uart.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../BTB/src/top.sv">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/top.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -280,7 +277,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Genesys_riscv_10s.xdc">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/Genesys_riscv_10s.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

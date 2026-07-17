@@ -7,7 +7,7 @@
   <File Type="RDS-RDS" Name="DRAM.vds"/>
   <File Type="RDS-DCP" Name="DRAM.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DRAM" RelGenDir="$PGENDIR/DRAM">
-    <File Path="$PPRDIR/../BTB/ip/DRAM/DRAM.xci">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,7 +20,7 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DRAM" RelGenDir="$PGENDIR/DRAM">
-    <File Path="$PPRDIR/../BTB/ip/DRAM/DRAM.xci">
+    <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

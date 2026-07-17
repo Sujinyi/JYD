@@ -3,10 +3,10 @@
 # SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
 # IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
 # SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
-# Start of session at: Fri Jul 17 16:16:49 2026
-# Process ID         : 39404
+# Start of session at: Fri Jul 17 14:59:46 2026
+# Process ID         : 45828
 # Current directory  : C:/Users/21186/Documents/GitHub/JYD/RV32IM
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent15396 C:\Users\21186\Documents\GitHub\JYD\RV32IM\pipeline7_RAS.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent40420 C:\Users\21186\Documents\GitHub\JYD\RV32IM\pipeline7_RAS.xpr
 # Log file           : C:/Users/21186/Documents/GitHub/JYD/RV32IM/vivado.log
 # Journal file       : C:/Users/21186/Documents/GitHub/JYD/RV32IM\vivado.jou
 # Running On         : KuonjiAlice
@@ -19,7 +19,7 @@
 # Host memory        : 34142 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36289 MB
-# Available Virtual  : 5565 MB
+# Available Virtual  : 3822 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/21186/Documents/GitHub/JYD/RV32IM/pipeline7_RAS.xpr
@@ -80,8 +80,45 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk165_es:part0:1.0 avai
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/21186/Desktop/test/BTFN/RV32IM' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/pll_1/pll.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/pll_1/pll.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/counter.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/display_seg.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/perip_bridge.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/seg7.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/student_top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/twin_controller.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/uart.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/Genesys_riscv_10s.xdc'; using path 'C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/DRAM/DRAM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/IROM/IROM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci' instead.
 Scanning sources...
 Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/pll_1/pll.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/pll_1/pll.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/counter.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/display_seg.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/perip_bridge.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/seg7.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/student_top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/twin_controller.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/uart.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/Genesys_riscv_10s.xdc'; using path 'C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/DRAM/DRAM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/DRAM/DRAM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/IROM/IROM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/IROM/IROM.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/IROM/IROM.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/ip/pll_1/pll.xci'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/ip/pll_1/pll.xci' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/counter.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/counter.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/display_seg.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/display_seg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/perip_bridge.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/perip_bridge.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/seg7.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/seg7.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/student_top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/student_top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/twin_controller.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/twin_controller.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/uart.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/uart.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/BTB/src/top.sv'; using path 'C:/Users/21186/Desktop/test/BTFN/BTB/src/top.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/21186/Documents/GitHub/JYD/Genesys_riscv_10s.xdc'; using path 'C:/Users/21186/Desktop/test/BTFN/Genesys_riscv_10s.xdc' instead.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Vivado25/2025.2.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -130,7 +167,51 @@ WARNING: [Project 1-5713] Board part '' set for the project  is not found. Board
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado25/2025.2.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 1761.148 ; gain = 231.277
 update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.2.0
+  ****** Build date   : Nov 14 2025-07:16:52
+    **** Build number : 2025.2.1763075812
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/200300AFF274B
+set_property PROGRAM.FILE {C:/Users/21186/Documents/GitHub/JYD/RV32IM/pipeline7_RAS.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/21186/Documents/GitHub/JYD/RV32IM/pipeline7_RAS.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2137.879 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/200300AFF274B
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/200300AFF274B
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/21186/Documents/GitHub/JYD/RV32IM/pipeline7_RAS.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2207.965 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 16:39:45 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 15:17:24 2026...

@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/21186/Desktop/test/BTFN/RV32IM/pipeline7_RAS.xpr">
+<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/21186/Documents/GitHub/JYD/RV32IM/pipeline7_RAS.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="261b92d06cdb49269564eecd832fc29f"/>
@@ -119,7 +119,19 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/ip/pll_1/pll.xci">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/RV32IM/coe/withMext/demo/dram.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/RV32IM/coe/withMext/demo/irom-v2.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/pll_1/pll.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -294,56 +306,56 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/counter.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/counter.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/display_seg.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/display_seg.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/perip_bridge.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/perip_bridge.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/seg7.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/seg7.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/student_top.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/student_top.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/twin_controller.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/twin_controller.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/uart.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/uart.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../BTB/src/top.sv">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/src/top.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -358,7 +370,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../Genesys_riscv_10s.xdc">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/Genesys_riscv_10s.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -419,7 +431,7 @@
       </Config>
     </FileSet>
     <FileSet Name="DRAM" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DRAM" RelGenDir="$PGENDIR/DRAM">
-      <File Path="$PPRDIR/../BTB/ip/DRAM/DRAM.xci">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/DRAM/DRAM.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -432,9 +444,9 @@
       </Config>
     </FileSet>
     <FileSet Name="IROM" Type="BlockSrcs" RelSrcDir="$PSRCDIR/IROM" RelGenDir="$PGENDIR/IROM">
-      <File Path="$PPRDIR/../BTB/ip/IROM/IROM.xci">
+      <File Path="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/IROM/IROM.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../BTB/ip/IROM/IROM.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/test/BTFN/BTB/ip/IROM/IROM.xci"/>
           <Attr Name="ImportTime" Val="1775791114"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -488,9 +500,7 @@
     </Run>
     <Run Id="IROM_synth_1" Type="Ft3:Synth" SrcSet="IROM" Part="xc7k325tffg900-2" ConstrsSet="IROM" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/IROM_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/IROM_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/IROM_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -535,9 +545,7 @@
     </Run>
     <Run Id="IROM_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="IROM" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="IROM_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/IROM_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/IROM_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
