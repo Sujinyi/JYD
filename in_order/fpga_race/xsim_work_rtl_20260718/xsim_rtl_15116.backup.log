@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Sat Jul 18 17:04:52 2026
+# Process ID         : 15116
+# Current directory  : C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/xsim_work_rtl_20260718
+# Command line       : xsim.exe -log xsim_rtl.log -mode tcl -source {xsim.dir/tb_xsim_rtl/xsim_script.tcl}
+# Log file           : C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/xsim_work_rtl_20260718/xsim_rtl.log
+# Journal file       : C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/xsim_work_rtl_20260718\xsim.jou
+# Running On         : KuonjiAlice
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 34142 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36289 MB
+# Available Virtual  : 6481 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_xsim_rtl/xsim_script.tcl
+# xsim {tb_xsim_rtl} -autoloadwcfg -tclbatch {C:\Users\21186\Desktop\CICC2026\in_order\fpga_race\sim\xsim_run.tcl}
+Time resolution is 1 ps
+source {C:Users?86DesktopCICC2026in_orderpga_racesimxsim_run.tcl}
+couldn't read file "C:Users?86DesktopCICC2026in_orderpga_racesimxsim_run.tcl": no such file or directory
+xsim% INFO: [Common 17-206] Exiting xsim at Sat Jul 18 17:04:54 2026...

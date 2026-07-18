@@ -1,0 +1,18 @@
+0.7
+2020.2
+Mar 19 2026
+19:50:51
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/counter.sv,1784284814,systemVerilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/display_seg.sv,,counter,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/display_seg.sv,1784284814,systemVerilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/seg7.sv,,display_seg,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/dram.v,1784313944,verilog,,E:/Vivado25/2025.2.1/data/verilog/src/glbl.v,,DRAM,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/perip_bridge.sv,1784365181,systemVerilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/student_top.sv,,perip_bridge,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/seg7.sv,1784284814,systemVerilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/perip_bridge.sv,,seg7,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/student_top.sv,1784362535,systemVerilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/sim/tb_xsim.sv,,student_top,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/sim/tb_xsim.sv,1784364617,systemVerilog,,,,tb_xsim,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/pipeline7_RAS/pipeline7_RAS.gen/sources_1/ip/IROM/sim/IROM.v,1784363882,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/rtl/alu.v,,IROM,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/rtl/alu.v,1784227990,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/rtl/core.v,,alu,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/rtl/core.v,1784320422,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/rtl/decoder.v,,core,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/rtl/decoder.v,1784282438,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/rtl/muldiv.v,,decoder,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/rtl/muldiv.v,1784320846,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/rtl/regfile_2w.v,,muldiv,,,,,,,,
+C:/Users/21186/Desktop/CICC2026/in_order/rtl/regfile_2w.v,1784279208,verilog,,C:/Users/21186/Desktop/CICC2026/in_order/fpga_race/rtl/dram.v,,regfile_2w,,,,,,,,
+E:/Vivado25/2025.2.1/data/verilog/src/glbl.v,1762536278,verilog,,,,glbl,,,,,,,,
