@@ -1,1 +1,0 @@
---debug "typical" --relax --mt "2" -L "work" -L "blk_mem_gen_v8_4_12" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_xsim_rtl" "work.tb_xsim" "work.glbl" 
